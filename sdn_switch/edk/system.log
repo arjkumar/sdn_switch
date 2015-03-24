@@ -1,0 +1,79 @@
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+chipscope_ila_2 has been added to the project
+chipscope_ila_0 has been added to the project
+Writing filter settings....
+Done writing filter settings to:
+	/raid/home/akumar17/thesis/sdn_switch/edk/etc/system.filters
+Done writing Tab View settings to:
+	/raid/home/akumar17/thesis/sdn_switch/edk/etc/system.gui
+Writing filter settings....
+Done writing filter settings to:
+	/raid/home/akumar17/thesis/sdn_switch/edk/etc/system.filters
+Done writing Tab View settings to:
+	/raid/home/akumar17/thesis/sdn_switch/edk/etc/system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+The project's MHS file has changed on disk.
+WARNING:EDK -  *************************************************************
+WARNING:EDK -  ** To get full timing path analysis when using asynchronous *
+WARNING:EDK -  ** LUTRAM FSL FIFO (C_ASYNC_CLKS = 1, C_IMP_STYLE = 0)      *
+WARNING:EDK -  ** include "ENABLE=sr_reg_o;" in the top level UCF file.    *
+WARNING:EDK -  *************************************************************
+WARNING:EDK -  *************************************************************
+WARNING:EDK -  ** To get full timing path analysis when using asynchronous *
+WARNING:EDK -  ** LUTRAM FSL FIFO (C_ASYNC_CLKS = 1, C_IMP_STYLE = 0)      *
+WARNING:EDK -  ** include "ENABLE=sr_reg_o;" in the top level UCF file.    *
+WARNING:EDK -  *************************************************************
+The project's MHS file has changed on disk.
+ERROR:EDK:4085 - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 - PARAMETER C_READ_CLOCK_PERIOD not found in the MPD - /raid/home/akumar17/thesis/sdn_switch/edk/system.mhs line 374 
+WARNING:UtilitiesC:159 - Message file "usenglish/_SSNAME.msg" wasn't found.
+Writing filter settings....
+Done writing filter settings to:
+	/raid/home/akumar17/thesis/sdn_switch/edk/etc/system.filters
+Done writing Tab View settings to:
+	/raid/home/akumar17/thesis/sdn_switch/edk/etc/system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK -  *************************************************************
+WARNING:EDK -  ** To get full timing path analysis when using asynchronous *
+WARNING:EDK -  ** LUTRAM FSL FIFO (C_ASYNC_CLKS = 1, C_IMP_STYLE = 0)      *
+WARNING:EDK -  ** include "ENABLE=sr_reg_o;" in the top level UCF file.    *
+WARNING:EDK -  *************************************************************
+Address Map for Processor ppc405_0
+  (0b0100000000-0b0111111111) ppc405_0	
+  (0x81800000-0x8180ffff) xps_intc_1	plb
+  (0x81820000-0x8182ffff) xps_intc_0	plb
+  (0x84000000-0x8400ffff) RS232_Uart_1	plb
+  (0x84400000-0x8440ffff) mdm_0	plb
+  (0xa0000000-0xbfffffff) DDR2_SDRAM	ppc405_0_dplb1
+  (0xa0000000-0xbfffffff) DDR2_SDRAM	ppc405_0_iplb1
+  (0xcfe00000-0xcfe0ffff) sdn_ctlr_intf_0	plb
+  (0xffffe000-0xffffffff) xps_bram_if_cntlr_1	plb
+Address Map for Processor microblaze_0
+  (0000000000-0x00003fff) dlmb_cntlr	dlmb
+  (0000000000-0x00003fff) ilmb_cntlr	ilmb
+  (0x81800000-0x8180ffff) xps_intc_1	plb
+  (0x81820000-0x8182ffff) xps_intc_0	plb
+  (0x84000000-0x8400ffff) RS232_Uart_1	plb
+  (0x84400000-0x8440ffff) mdm_0	plb
+  (0xa0000000-0xbfffffff) DDR2_SDRAM	plb
+  (0xcfe00000-0xcfe0ffff) sdn_ctlr_intf_0	plb
+  (0xffffe000-0xffffffff) xps_bram_if_cntlr_1	plb
+WARNING:EDK -  *************************************************************
+WARNING:EDK -  ** To get full timing path analysis when using asynchronous *
+WARNING:EDK -  ** LUTRAM FSL FIFO (C_ASYNC_CLKS = 1, C_IMP_STYLE = 0)      *
+WARNING:EDK -  ** include "ENABLE=sr_reg_o;" in the top level UCF file.    *
+WARNING:EDK -  *************************************************************
+Generated Addresses Successfully
+WARNING:EDK -  *************************************************************
+WARNING:EDK -  ** To get full timing path analysis when using asynchronous *
+WARNING:EDK -  ** LUTRAM FSL FIFO (C_ASYNC_CLKS = 1, C_IMP_STYLE = 0)      *
+WARNING:EDK -  ** include "ENABLE=sr_reg_o;" in the top level UCF file.    *
+WARNING:EDK -  *************************************************************

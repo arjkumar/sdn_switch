@@ -1,0 +1,549 @@
+Release 14.5 par P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+freeman::  Mon Mar 23 11:52:15 2015
+
+par -w -ol high system_map.ncd system.ncd system.pcf 
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '4vfx60.nph' in environment
+/raid/opt.x86_64/xilinx/14.5/ISE_DS/ISE/:/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK.
+   "system" is an NCD, version 3.2, device xc4vfx60, package ff1152, speed -11
+This design is using the default stepping level (major silicon revision) for this device (0). Unless your design is
+targeted at devices of this stepping level, it is recommended that you explicitly specify the stepping level of the
+parts you will be using. This will allow the tools to take advantage of any available performance and functional
+enhancements for this device. The latest stepping level for this device is '1'. Additional information on "stepping
+level" is available at support.xilinx.com.
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'1717@rsass-homer.uncc.edu:1742@rsass-homer.uncc.edu:2100@ls-me5.uncc.edu:1717@rsass-homer.uncc.edu'.
+INFO:Security:56 - Part 'xc4vfx60' is not a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
+WARNING:Security:44 - Since no license file was found,
+       please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.71 2013-03-26".
+
+
+
+Device Utilization Summary:
+
+   Number of BSCANs                          2 out of 4      50%
+   Number of BUFGs                           7 out of 32     21%
+   Number of DCM_ADVs                        2 out of 12     16%
+   Number of DSP48s                          3 out of 128     2%
+   Number of GT11s                          16 out of 16    100%
+      Number of LOCed GT11s                 16 out of 16    100%
+
+   Number of IDELAYCTRLs                     4 out of 20     20%
+      Number of LOCed IDELAYCTRLs            4 out of 4     100%
+
+   Number of ILOGICs                        65 out of 576    11%
+   Number of External IOBs                 119 out of 576    20%
+      Number of LOCed IOBs                 119 out of 119   100%
+
+   Number of External IPADs                 32 out of 620     5%
+      Number of LOCed IPADs                  0 out of 32      0%
+
+   Number of JTAGPPCs                        1 out of 1     100%
+   Number of OLOGICs                       113 out of 576    19%
+   Number of External OPADs                 32 out of 32    100%
+      Number of LOCed OPADs                  0 out of 32      0%
+
+   Number of PPC405_ADVs                     2 out of 2     100%
+   Number of RAMB16s                       148 out of 232    63%
+   Number of Slices                      15364 out of 25280  60%
+      Number of SLICEMs                   1571 out of 12640  12%
+
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please
+   consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.
+Starting initial Timing Analysis.  REAL time: 28 secs 
+Finished initial Timing Analysis.  REAL time: 29 secs 
+
+WARNING:Par:288 - The signal dlmb_LMB_ABus<30> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sdn_switch_0/N80 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_port_BRAM_Addr<31> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal proc_sys_reset_0/proc_sys_reset_0/Mshreg_Core_Reset_Req_1_d2 has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal
+   DDR2_SDRAM/DDR2_SDRAM/PLB_2_INST.plbv46_pim_2/comp_plbv46_pim/GENERATE_PLB_PLBV46_PIM.PIM_WRITE_MODULE/Madd_word_coun
+   t_share0000_cy<6> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ppc405_0/ppc405_0/C405PLBICUU0ATTR has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ppc405_0/ppc405_0/C405PLBICUCACHEABLE has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal ppc405_0/ppc405_0/C405PLBDCUWRITETHRU has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal ppc405_0/ppc405_0/C405PLBDCUU0ATTR has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ppc405_0/ppc405_0/C405PLBDCUGUARDED has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal ppc405_0/ppc405_0/C405PLBDCUCACHEABLE has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal ppc405_0_jtagppc_bus_C405JTGTDOEN has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal jtagppc_cntlr_inst/jtagppc_cntlr_inst/C405JTGTDOEN has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_port_BRAM_Addr<30> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal jtagppc_cntlr_inst/DBGC405DEBUGHALT0 has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal jtagppc_cntlr_inst/DBGC405DEBUGHALT1 has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal sdn_switch_0/N76 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dlmb_LMB_ABus<31> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fsl_v20_0/FSL_Control_IRQ has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal chipscope_vio_0/chipscope_vio_0/i_chipscope_vio_0/U0/I_VIO/reset_f_edge/iDOUT<1> has no
+   load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 119398 unrouted;      REAL time: 31 secs 
+
+Phase  2  : 90502 unrouted;      REAL time: 33 secs 
+
+Phase  3  : 30828 unrouted;      REAL time: 47 secs 
+
+Phase  4  : 30936 unrouted; (Setup:4830, Hold:406, Component Switching Limit:0)     REAL time: 1 mins 1 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:7822, Hold:321, Component Switching Limit:0)     REAL time: 1 mins 29 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:321, Component Switching Limit:0)     REAL time: 1 mins 44 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:321, Component Switching Limit:0)     REAL time: 1 mins 44 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:321, Component Switching Limit:0)     REAL time: 1 mins 44 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 45 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 52 secs 
+Total REAL time to Router completion: 1 mins 52 secs 
+Total CPU time to Router completion: 1 mins 52 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+| clk_100_0000MHzDCM0 | BUFGCTRL_X0Y2| No   | 9465 |  0.822     |  3.102      |
++---------------------+--------------+------+------+------------+-------------+
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/SIG_ |              |      |      |            |             |
+|      DCM1_CLK2X_BUF |BUFGCTRL_X0Y30| No   |    7 |  0.062     |  2.333      |
++---------------------+--------------+------+------+------------+-------------+
+| clk_200_0000MHzDCM0 | BUFGCTRL_X0Y0| No   | 3240 |  0.781     |  3.118      |
++---------------------+--------------+------+------+------------+-------------+
+|chipscope_icon_0_con |              |      |      |            |             |
+|            trol0<0> |BUFGCTRL_X0Y29| No   |  313 |  0.594     |  2.934      |
++---------------------+--------------+------+------+------------+-------------+
+|     mdm_0/Dbg_Clk_1 | BUFGCTRL_X0Y3| No   |  165 |  0.546     |  2.859      |
++---------------------+--------------+------+------+------------+-------------+
+|clk_200_0000MHz90DCM |              |      |      |            |             |
+|                   0 | BUFGCTRL_X0Y1| No   |   86 |  0.140     |  2.962      |
++---------------------+--------------+------+------+------------+-------------+
+|                  N0 |         Local|      |  867 |  1.160     |  2.868      |
++---------------------+--------------+------+------+------------+-------------+
+|fpga_0_clk_1_sys_clk |              |      |      |            |             |
+|          _pin_IBUFG |         Local|      |    7 |  0.520     |  2.379      |
++---------------------+--------------+------+------+------------+-------------+
+|  mdm_0/Dbg_Update_1 |         Local|      |   33 |  2.778     |  4.221      |
++---------------------+--------------+------+------+------------+-------------+
+|chipscope_icon_0_con |              |      |      |            |             |
+|           trol3<13> |         Local|      |    4 |  0.000     |  2.020      |
++---------------------+--------------+------+------+------------+-------------+
+|chipscope_icon_0_con |              |      |      |            |             |
+|           trol1<13> |         Local|      |    4 |  0.000     |  0.831      |
++---------------------+--------------+------+------+------------+-------------+
+|chipscope_icon_0_con |              |      |      |            |             |
+|           trol0<13> |         Local|      |    4 |  0.000     |  0.782      |
++---------------------+--------------+------+------+------------+-------------+
+|RS232_Uart_1_Interru |              |      |      |            |             |
+|                  pt |         Local|      |    2 |  0.713     |  1.494      |
++---------------------+--------------+------+------+------------+-------------+
+|                  N1 |         Local|      |   25 |  0.423     |  1.806      |
++---------------------+--------------+------+------+------------+-------------+
+|chipscope_icon_0/chi |              |      |      |            |             |
+|pscope_icon_0/i_chip |              |      |      |            |             |
+|scope_icon_0/U0/iUPD |              |      |      |            |             |
+|             ATE_OUT |         Local|      |    1 |  0.000     |  0.722      |
++---------------------+--------------+------+------+------------+-------------+
+|ppc405_0_jtagppc_bus |              |      |      |            |             |
+|         _JTGC405TCK |         Local|      |    2 |  1.228     |  3.094      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[7].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_A/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.623      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[6].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_A/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.623      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[5].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_A/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.623      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[4].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_A/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.623      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[3].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_A/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.636      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[2].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_A/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.636      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[1].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_A/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.636      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[0].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_A/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.636      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[7].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_B/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.623      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[6].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_B/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.658      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[5].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_B/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.623      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[4].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_B/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.623      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[3].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_B/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.636      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[2].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_B/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.636      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[1].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_B/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.636      |
++---------------------+--------------+------+------+------------+-------------+
+|MGT_wrapper/MGT_wrap |              |      |      |            |             |
+|per/g1[0].g2.pcore/n |              |      |      |            |             |
+|ull_pair_inst/GT11_I |              |      |      |            |             |
+| NST_B/TXOUTCLK1_OUT |         Local|      |    2 |  0.000     |  0.636      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM0 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM0_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|        _INST/CLKOUT |         Local|      |    6 |  0.155     |  1.172      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM0 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM0_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<1> |         Local|      |    2 |  0.000     |  0.783      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM0 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM0_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|       _INST/FASTCLK |         Local|      |    3 |  0.000     |  0.749      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM0 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM0_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<2> |         Local|      |    2 |  0.000     |  0.595      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM0 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM0_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<3> |         Local|      |    2 |  0.000     |  0.426      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM0 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM0_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<4> |         Local|      |    2 |  0.000     |  1.381      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM0 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM0_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<5> |         Local|      |    2 |  0.000     |  0.709      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM0 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM0_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<6> |         Local|      |    2 |  0.000     |  0.793      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM1 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM1_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|        _INST/CLKOUT |         Local|      |    6 |  0.035     |  0.614      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM1 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM1_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<1> |         Local|      |    2 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM1 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM1_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|       _INST/FASTCLK |         Local|      |    3 |  0.000     |  0.441      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM1 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM1_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<2> |         Local|      |    2 |  0.000     |  0.553      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM1 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM1_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<3> |         Local|      |    2 |  0.000     |  0.394      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM1 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM1_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<4> |         Local|      |    2 |  0.000     |  0.626      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM1 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM1_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<5> |         Local|      |    2 |  0.000     |  0.796      |
++---------------------+--------------+------+------+------------+-------------+
+|DCM_AUTOCALIBRATION_ |              |      |      |            |             |
+|clock_generator_0/cl |              |      |      |            |             |
+|ock_generator_0/DCM1 |              |      |      |            |             |
+|_INST/Using_DCM_ADV. |              |      |      |            |             |
+|DCM_ADV_INST/clock_g |              |      |      |            |             |
+|enerator_0/clock_gen |              |      |      |            |             |
+|erator_0/DCM1_INST/U |              |      |      |            |             |
+|sing_DCM_ADV.DCM_ADV |              |      |      |            |             |
+|     _INST/cd/CLK<6> |         Local|      |    2 |  0.000     |  0.401      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_SI | SETUP       |     0.038ns|     4.962ns|       0|           0
+  G_DCM0_CLK0 = PERIOD TIMEGRP         "clo | HOLD        |     0.050ns|            |       0|           0
+  ck_generator_0_clock_generator_0_SIG_DCM0 |             |            |            |        |            
+  _CLK0"         TS_clock_generator_0_clock |             |            |            |        |            
+  _generator_0_SIG_DCM1_CLK2X HIGH 50%      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_SI | SETUP       |     0.180ns|     9.748ns|       0|           0
+  G_DCM0_CLKDV = PERIOD TIMEGRP         "cl | HOLD        |     0.092ns|            |       0|           0
+  ock_generator_0_clock_generator_0_SIG_DCM |             |            |            |        |            
+  0_CLKDV"         TS_clock_generator_0_clo |             |            |            |        |            
+  ck_generator_0_SIG_DCM1_CLK2X / 2 HIGH 50 |             |            |            |        |            
+  %                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_SI | SETUP       |     0.694ns|     4.074ns|       0|           0
+  G_DCM0_CLK90 = PERIOD TIMEGRP         "cl | HOLD        |     0.456ns|            |       0|           0
+  ock_generator_0_clock_generator_0_SIG_DCM |             |            |            |        |            
+  0_CLK90"         TS_clock_generator_0_clo |             |            |            |        |            
+  ck_generator_0_SIG_DCM1_CLK2X PHASE 1.25  |             |            |            |        |            
+  ns         HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_SI | SETUP       |     3.234ns|     1.766ns|       0|           0
+  G_DCM1_CLK2X = PERIOD TIMEGRP         "cl | HOLD        |     0.461ns|            |       0|           0
+  ock_generator_0_clock_generator_0_SIG_DCM | MINLOWPULSE |     1.400ns|     3.600ns|       0|           0
+  1_CLK2X" TS_sys_clk_pin *         2 HIGH  |             |            |            |        |            
+  50%                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |     8.235ns|     1.765ns|       0|           0
+  pin" 100 MHz HIGH 50%                     | HOLD        |     0.472ns|            |       0|           0
+                                            | MINLOWPULSE |     5.200ns|     4.800ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_ppc405_0_DCURDDACK = MAXDELAY FROM TIM | SETUP       |     1.868ns|     3.132ns|       0|           0
+  EGRP "ppc405_0_DCURDDACK_REG" TO          |             |            |            |        |            
+  TIMEGRP "CPUS" 5 ns PRIORITY 1            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_RST_ppc405_0_path" TIG           | SETUP       |         N/A|     4.027ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|      4.800ns|      9.924ns|            0|            0|            3|       842850|
+| TS_clock_generator_0_clock_gen|      5.000ns|      3.600ns|      4.962ns|            0|            0|            3|       842847|
+| erator_0_SIG_DCM1_CLK2X       |             |             |             |             |             |             |             |
+|  TS_clock_generator_0_clock_ge|      5.000ns|      4.962ns|          N/A|            0|            0|        31343|            0|
+|  nerator_0_SIG_DCM0_CLK0      |             |             |             |             |             |             |             |
+|  TS_clock_generator_0_clock_ge|      5.000ns|      4.074ns|          N/A|            0|            0|          296|            0|
+|  nerator_0_SIG_DCM0_CLK90     |             |             |             |             |             |             |             |
+|  TS_clock_generator_0_clock_ge|     10.000ns|      9.748ns|          N/A|            0|            0|       811208|            0|
+|  nerator_0_SIG_DCM0_CLKDV     |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 20 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 2 mins 2 secs 
+Total CPU time to PAR completion: 2 mins 1 secs 
+
+Peak Memory Usage:  1212 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 22
+Number of info messages: 1
+
+Writing design to file system.ncd
+
+
+
+PAR done!

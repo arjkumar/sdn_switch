@@ -1,0 +1,3 @@
+cp ../edk/implementation/download.bit .
+cp ../edk/SDK/SDK_Workspace/packet_tx/Debug/packet_tx.elf .
+cp ../edk/SDK/SDK_Workspace/sdn_cntlr/Debug/sdn_cntlr.elf .

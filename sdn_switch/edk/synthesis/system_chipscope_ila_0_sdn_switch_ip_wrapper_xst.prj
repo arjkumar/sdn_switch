@@ -1,0 +1,2 @@
+VHDL chipscope_ila_0_sdn_switch_ip_v1_05_a /raid/home/akumar17/thesis/sdn_switch/edk/hdl/elaborate/chipscope_ila_0_sdn_switch_ip_v1_05_a/synhdl/vhdl/chipscope_ila_0_sdn_switch_ip.vhd
+vhdl work ../hdl/system_chipscope_ila_0_sdn_switch_ip_wrapper.vhd

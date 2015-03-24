@@ -1,0 +1,12 @@
+/*
+ * Empty C++ Application
+ */
+#include <iostream>
+#include <stdio.h>
+#include "sdn_ctlr_intf.h"
+#include "xparameters.h"
+
+int main()
+{
+	return 0;
+}

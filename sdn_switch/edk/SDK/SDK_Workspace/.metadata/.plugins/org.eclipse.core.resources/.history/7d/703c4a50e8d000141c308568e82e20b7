@@ -1,0 +1,36 @@
+/*
+ * sdn_cntlr_classes.cc
+ *
+ *  Created on: Mar 21, 2015
+ *      Author: akumar17
+ */
+
+#include "xparameters.h"
+#include "register_map.h"
+#include <stdint.h>
+#include <stdio.h>
+using namespace std;
+
+class cpu_bus_write{
+  volatile uint32_t *data_p, *addr_p, *rd_wr_L_p, *ctrl_p, *toggle_p;
+  static volatile bool toggle_val; 
+  
+  public: 
+        cpu_bus_write(){
+          data_p    = CPU_BUS_WR_DATA;
+          addr_p    = CPU_BUS_WR_ADDR;
+          rd_wr_L_p = CPU_BUS_RD_WR_L;
+          ctrl_p    = CPU_BUS_WR_CTRL;
+          toggle_p  = CPU_BUS_WR_TOGGLE;
+        }
+	inline void toggle(){
+		*toggle_p    = !toggle_val;
+		toggle_val   = !toggle_val;
+		return;
+	}
+
+};
+
+
+
+

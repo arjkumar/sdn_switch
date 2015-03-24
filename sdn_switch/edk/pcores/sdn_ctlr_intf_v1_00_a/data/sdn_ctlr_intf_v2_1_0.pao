@@ -1,0 +1,11 @@
+##############################################################################
+## Filename:          /raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_ctlr_intf_v1_00_a/data/sdn_ctlr_intf_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Mar 22 00:51:58 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a all vhdl
+lib plbv46_slave_single_v1_01_a all vhdl
+lib sdn_ctlr_intf_v1_00_a openflow_switch.h verilog
+lib sdn_ctlr_intf_v1_00_a user_logic verilog
+lib sdn_ctlr_intf_v1_00_a sdn_ctlr_intf vhdl

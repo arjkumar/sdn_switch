@@ -1,0 +1,41 @@
+12:29:32 **** Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 312368	  41176	   4940	 358484	  57854	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+
+12:29:34 Build Finished (took 1s.821ms)
+

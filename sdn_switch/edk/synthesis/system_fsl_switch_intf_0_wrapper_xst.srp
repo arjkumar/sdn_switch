@@ -1,0 +1,393 @@
+Release 14.5 - xst P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /raid/home/akumar17/thesis/sdn_switch/edk/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_fsl_switch_intf_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/" "/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc4vfx60ff1152-11
+Output File Name                   : "../implementation/system_fsl_switch_intf_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_fsl_switch_intf_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "/raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/fsl_switch_intf.v" in library fsl_switch_intf_v1_00_a
+Module <fsl_switch_intf> compiled
+Compiling verilog file "../hdl/system_fsl_switch_intf_0_wrapper.v" in library work
+Module <system_fsl_switch_intf_0_wrapper> compiled
+No errors in compilation
+Analysis of file <"system_fsl_switch_intf_0_wrapper_xst.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <system_fsl_switch_intf_0_wrapper> in library <work>.
+
+Analyzing hierarchy for module <fsl_switch_intf> in library <fsl_switch_intf_v1_00_a> with parameters.
+	BACK_PRESS_EN = "00000000000000000000000000000000"
+	CTRL_WIDTH = "00000000000000000000000000001000"
+	DATA_WIDTH = "00000000000000000000000001000000"
+	Idle = "010"
+	NUMBER_OF_INPUT_WORDS = "00000000000000000000000000000011"
+	Read_Inputs = "001"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <system_fsl_switch_intf_0_wrapper>.
+Module <system_fsl_switch_intf_0_wrapper> is correct for synthesis.
+ 
+Analyzing module <fsl_switch_intf> in library <fsl_switch_intf_v1_00_a>.
+	BACK_PRESS_EN = 32'sb00000000000000000000000000000000
+	CTRL_WIDTH = 32'sb00000000000000000000000000001000
+	DATA_WIDTH = 32'sb00000000000000000000000001000000
+	Idle = 3'b010
+	NUMBER_OF_INPUT_WORDS = 32'sb00000000000000000000000000000011
+	Read_Inputs = 3'b001
+Module <fsl_switch_intf> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <fsl_switch_intf>.
+    Related source file is "/raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/fsl_switch_intf.v".
+WARNING:Xst:647 - Input <FSL_S_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | FSL_Clk                   (rising_edge)        |
+    | Reset              | FSL_Rst                   (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 10                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <out_wr>.
+    Found 32-bit up counter for signal <debug_count>.
+    Found 3-bit register for signal <nr_of_reads>.
+    Found 3-bit subtractor for signal <nr_of_reads$addsub0000> created at line 200.
+    Found 96-bit register for signal <sw_acc>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 100 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <fsl_switch_intf> synthesized.
+
+
+Synthesizing Unit <system_fsl_switch_intf_0_wrapper>.
+    Related source file is "../hdl/system_fsl_switch_intf_0_wrapper.v".
+Unit <system_fsl_switch_intf_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 3-bit subtractor                                      : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 3-bit register                                        : 1
+ 96-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <fsl_switch_intf_0/state/FSM> on signal <state[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 10    | 0
+ 01    | 1
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 3-bit subtractor                                      : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 100
+ Flip-Flops                                            : 100
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_fsl_switch_intf_0_wrapper> ...
+
+Optimizing unit <fsl_switch_intf> ...
+WARNING:Xst:1710 - FF/Latch <nr_of_reads_0> (without init value) has a constant value of 0 in block <fsl_switch_intf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nr_of_reads_0> (without init value) has a constant value of 0 in block <fsl_switch_intf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nr_of_reads_0> (without init value) has a constant value of 0 in block <fsl_switch_intf>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 132
+ Flip-Flops                                            : 132
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system_fsl_switch_intf_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 359
+
+Cell Usage :
+# BELS                             : 203
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 30
+#      LUT2                        : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 102
+#      MUXCY                       : 31
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 132
+#      FDE                         : 1
+#      FDR                         : 99
+#      FDRE                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx60ff1152-11 
+
+ Number of Slices:                       76  out of  25280     0%  
+ Number of Slice Flip Flops:            132  out of  50560     0%  
+ Number of 4 input LUTs:                137  out of  50560     0%  
+ Number of IOs:                         359
+ Number of bonded IOBs:                   0  out of    576     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                 | Load  |
+-----------------------------------+---------------------------------------+-------+
+FSL_Clk                            | NONE(fsl_switch_intf_0/debug_count_31)| 132   |
+-----------------------------------+---------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -11
+
+   Minimum period: 3.012ns (Maximum Frequency: 332.027MHz)
+   Minimum input arrival time before clock: 1.079ns
+   Maximum output required time after clock: 1.657ns
+   Maximum combinational path delay: 0.358ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'FSL_Clk'
+  Clock period: 3.012ns (frequency: 332.027MHz)
+  Total number of paths / destination ports: 1085 / 164
+-------------------------------------------------------------------------
+Delay:               3.012ns (Levels of Logic = 2)
+  Source:            fsl_switch_intf_0/sw_acc_30 (FF)
+  Destination:       fsl_switch_intf_0/debug_count_31 (FF)
+  Source Clock:      FSL_Clk rising
+  Destination Clock: FSL_Clk rising
+
+  Data Path: fsl_switch_intf_0/sw_acc_30 to fsl_switch_intf_0/debug_count_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.307   0.653  fsl_switch_intf_0/sw_acc_30 (fsl_switch_intf_0/sw_acc_30)
+     LUT4:I0->O            1   0.166   0.452  fsl_switch_intf_0/debug_count_and00009 (fsl_switch_intf_0/debug_count_and00009)
+     LUT4:I3->O           32   0.166   0.807  fsl_switch_intf_0/debug_count_and000019 (fsl_switch_intf_0/debug_count_and0000)
+     FDRE:CE                   0.461          fsl_switch_intf_0/debug_count_0
+    ----------------------------------------
+    Total                      3.012ns (1.100ns logic, 1.912ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 264 / 232
+-------------------------------------------------------------------------
+Offset:              1.079ns (Levels of Logic = 1)
+  Source:            FSL_Rst (PAD)
+  Destination:       fsl_switch_intf_0/out_wr (FF)
+  Destination Clock: FSL_Clk rising
+
+  Data Path: FSL_Rst to fsl_switch_intf_0/out_wr
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O              1   0.305   0.313  fsl_switch_intf_0/FSL_Rst_inv1_INV_0 (fsl_switch_intf_0/FSL_Rst_inv)
+     FDE:CE                    0.461          fsl_switch_intf_0/out_wr
+    ----------------------------------------
+    Total                      1.079ns (0.766ns logic, 0.313ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 282 / 282
+-------------------------------------------------------------------------
+Offset:              1.657ns (Levels of Logic = 1)
+  Source:            fsl_switch_intf_0/state_FSM_FFd1 (FF)
+  Destination:       FSL_S_Read (PAD)
+  Source Clock:      FSL_Clk rising
+
+  Data Path: fsl_switch_intf_0/state_FSM_FFd1 to FSL_S_Read
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q            102   0.307   1.184  fsl_switch_intf_0/state_FSM_FFd1 (fsl_switch_intf_0/state_FSM_FFd1)
+     LUT2:I1->O            0   0.166   0.000  fsl_switch_intf_0/nr_of_reads_mux0000<2>11 (debug_trig<1>)
+    ----------------------------------------
+    Total                      1.657ns (0.473ns logic, 1.184ns route)
+                                       (28.5% logic, 71.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Delay:               0.358ns (Levels of Logic = 1)
+  Source:            FSL_S_Exists (PAD)
+  Destination:       FSL_S_Read (PAD)
+
+  Data Path: FSL_S_Exists to FSL_S_Read
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O            0   0.166   0.000  fsl_switch_intf_0/nr_of_reads_mux0000<2>11 (debug_trig<1>)
+    ----------------------------------------
+    Total                      0.358ns (0.358ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.35 secs
+ 
+--> 
+
+
+Total memory usage is 525732 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

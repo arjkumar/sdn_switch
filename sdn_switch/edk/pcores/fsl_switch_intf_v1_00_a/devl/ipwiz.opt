@@ -1,0 +1,11 @@
+-batch 
+-create fsl_switch_intf 
+-ver 1.00.a 
+-dir /raid/home/akumar17/thesis/ml410_mb2/edk/ 
+-lang verilog 
+-bus fsl s 
+-xps 
+-driver 
+-totalin 3
+-argin 1
+-desc "new FSL core"

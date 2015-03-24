@@ -1,0 +1,15 @@
+set -tmpdir /raid/home/akumar17/thesis/sdn_switch/edk/synthesis/xst_temp_dir/
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc4vfx60ff1152-11
+-top system
+-ifmt MIXED
+-ifn system_xst.prj
+-ofn ../implementation/system.ngc
+-hierarchy_separator /
+-iobuf YES
+-max_fanout 10000
+-sd {../implementation}
+-vlgincdir {"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/" "/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }

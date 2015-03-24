@@ -1,0 +1,10 @@
+-batch 
+-create sdn_ctlr_intf 
+-ver 1.00.a 
+-dir "/raid/home/akumar17/thesis/sdn_switch/edk" 
+-lang verilog 
+-bus plbv46 s 
+-rst 
+-reg 32 
+-xps 
+-driver 

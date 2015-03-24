@@ -1,0 +1,16 @@
+INST "mgt_wrapper*g1[0].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X0Y1";
+INST "mgt_wrapper*g1[0].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X0Y0";
+INST "mgt_wrapper*g1[1].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X0Y3";
+INST "mgt_wrapper*g1[1].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X0Y2";
+INST "mgt_wrapper*g1[2].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X0Y5";
+INST "mgt_wrapper*g1[2].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X0Y4";
+INST "mgt_wrapper*g1[3].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X0Y7";
+INST "mgt_wrapper*g1[3].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X0Y6";
+INST "mgt_wrapper*g1[4].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X1Y1";
+INST "mgt_wrapper*g1[4].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X1Y0";
+INST "mgt_wrapper*g1[5].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X1Y3";
+INST "mgt_wrapper*g1[5].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X1Y2";
+INST "mgt_wrapper*g1[6].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X1Y5";
+INST "mgt_wrapper*g1[6].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X1Y4";
+INST "mgt_wrapper*g1[7].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X1Y7";
+INST "mgt_wrapper*g1[7].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X1Y6";

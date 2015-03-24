@@ -1,0 +1,10 @@
+/*
+ * Empty C++ Application
+ */
+#include <iostream>
+#include <stdio.h>
+#include "sdn_ctlr_intf.h"
+int main()
+{
+	return 0;
+}

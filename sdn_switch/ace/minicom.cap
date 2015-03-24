@@ -1,0 +1,50 @@
+1 -> Starting SDN Controller...
+2 -> Waiting for chipscope to come up.. 
+Hello World.. Writing the packet in a loop
+3 -> Reseting the SDN Controller Interface.. 
+4 -> Waiting for SRAM Reset to finish.. 
+5 -> Installing flow on SWITCH0.. 
+Installing Flow...
+Header- 
+80200820 _248C _1790600 _248C0179 _80800D5 _E9AB0A5E _B6B88C06 _557901F _
+
+
+Action- 0000 _0000 _0000 _0000 _0000 _0000 _0000 _0000 _0000 _0002 _
+
+Writing Header...
+
+I=10, SRAM_ADDR=-1341803400
+I=89624607, SRAM_ADDR=16778496
+I=-1229419514, SRAM_ADDR=16778500
+I=-374666658, SRAM_ADDR=16778504
+I=134742229, SRAM_ADDR=16778508
+I=613155193, SRAM_ADDR=16778512
+I=24708608, SRAM_ADDR=16778516
+I=9356, SRAM_ADDR=16778520
+Writing Action...
+
+6 -> Flow installation complete! SWITCH0.. 
+1 -> Starting SDN Controller...
+2 -> Waiting for chipscope to come up.. 
+Hello World.. Writing the packet in a loop
+3 -> Reseting the SDN Controller Interface.. 
+4 -> Waiting for SRAM Reset to finish.. 
+5 -> Installing flow on SWITCH0.. 
+Installing Flow...
+Header- 
+80200820 _248C _1790600 _248C0179 _80800D5 _E9AB0A5E _B6B88C06 _557901F _
+
+
+Action- 0000 _0000 _0000 _0000 _0000 _0000 _0000 _0000 _0000 _000F _
+
+Writing Header...
+
+I=10, SRAM_ADDR=-1341802728
+I=89624607, SRAM_ADDR=16778496
+I=-1229419514, SRAM_ADDR=16778500
+I=-374666658, SRAM_ADDR=16778504
+I=134742229, SRAM_ADDR=16778508
+I=613155193, SRAM_ADDR=16778512
+I=24708608, SRAM_ADDR=16778516
+I=9356, SRAM_ADDR=16778520
+Reading Status.. Making sure that the write reg fifo is empty.. 

@@ -1,0 +1,38 @@
+##############################################################################
+## Filename:          /raid/home/akumar17/thesis/ml410_xilinx_14.5_v2/edk/pcores/sdn_switch_v1_00_a/data/sdn_switch_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Mar 16 10:57:06 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib sdn_switch_v1_00_a output_port_lookup.h verilog
+lib sdn_switch_v1_00_a openflow_switch.h verilog
+lib sdn_switch_v1_00_a small_fifo verilog
+lib sdn_switch_v1_00_a small_fifo_depth verilog
+lib sdn_switch_v1_00_a fallthrough_small_fifo verilog
+lib sdn_switch_v1_00_a crc_func_0_d256 verilog
+lib sdn_switch_v1_00_a crc_func_1_d256 verilog
+lib sdn_switch_v1_00_a generic_cntr_regs verilog
+lib sdn_switch_v1_00_a generic_hw_regs verilog
+lib sdn_switch_v1_00_a generic_sw_regs verilog
+lib sdn_switch_v1_00_a generic_regs verilog
+lib sdn_switch_v1_00_a add_header verilog
+lib sdn_switch_v1_00_a in_arb_regs verilog
+lib sdn_switch_v1_00_a input_arbiter verilog
+lib sdn_switch_v1_00_a vlan_remover verilog
+lib sdn_switch_v1_00_a vlan_adder verilog
+lib sdn_switch_v1_00_a header_parser verilog
+lib sdn_switch_v1_00_a header_hash verilog
+lib sdn_switch_v1_00_a exact_match verilog
+lib sdn_switch_v1_00_a match_arbiter verilog
+lib sdn_switch_v1_00_a opl_processor verilog
+lib sdn_switch_v1_00_a watchdog verilog
+lib sdn_switch_v1_00_a udp_reg_master verilog
+lib sdn_switch_v1_00_a nf2_reg_grp verilog
+lib sdn_switch_v1_00_a sram_arbiter verilog
+lib sdn_switch_v1_00_a output_port_lookup verilog
+lib sdn_switch_v1_00_a v_rams_11 verilog
+lib sdn_switch_v1_00_a v_bytewrite_ram_1b verilog
+lib sdn_switch_v1_00_a egress_demux verilog
+lib sdn_switch_v1_00_a reg_grp verilog
+lib sdn_switch_v1_00_a openflow_switch_reg verilog
+lib sdn_switch_v1_00_a sdn_switch verilog

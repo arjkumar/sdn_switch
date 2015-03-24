@@ -1,0 +1,34 @@
+Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+-- Compiling module small_fifo
+-- Compiling module fallthrough_small_fifo
+-- Compiling module fallthrough_small_fifo_tester
+-- Compiling module generic_cntr_regs
+-- Compiling module generic_hw_regs
+-- Compiling module generic_sw_regs
+-- Compiling module generic_regs
+-- Compiling module add_header
+-- Compiling module in_arb_regs
+-- Compiling module input_arbiter
+-- Compiling module vlan_remover
+-- Compiling module vlan_adder
+-- Compiling module header_parser
+-- Compiling module header_hash
+-- Compiling module header_hash_tester
+-- Compiling module exact_match
+-- Compiling module match_arbiter
+-- Compiling module opl_processor
+-- Compiling module watchdog
+-- Compiling module udp_reg_master
+-- Compiling module nf2_reg_grp
+-- Compiling module sram_arbiter
+-- Compiling module output_port_lookup
+-- Compiling module v_rams_11
+-- Compiling module v_bytewrite_ram_1b
+-- Compiling module egress_demux
+-- Compiling module openflow_switch
+-- Compiling module user_logic
+
+Top level modules:
+	fallthrough_small_fifo_tester
+	header_hash_tester
+	user_logic

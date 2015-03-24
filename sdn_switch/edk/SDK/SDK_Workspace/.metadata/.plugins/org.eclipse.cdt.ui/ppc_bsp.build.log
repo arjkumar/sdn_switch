@@ -1,0 +1,38 @@
+12:29:24 **** Build of project ppc_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe ppc405_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe ppc405_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+powerpc-eabi-ar: creating ../../../lib/libxil.a
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling uartlite
+Compiling bram
+Compiling intc
+Compiling cpu_ppc405
+Running execs_generate.
+Finished building libraries
+
+12:29:32 Build Finished (took 7s.686ms)
+

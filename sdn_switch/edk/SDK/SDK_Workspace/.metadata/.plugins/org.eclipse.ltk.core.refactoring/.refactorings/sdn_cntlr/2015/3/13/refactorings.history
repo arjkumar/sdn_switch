@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;sdn_cntlr/src/reg_header.h&apos; to &apos;register_map.h&apos;" description="Rename resource &apos;reg_header.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/reg_header.h" name="register_map.h" stamp="1427064222471" updateReferences="true"/>
+</session>

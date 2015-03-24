@@ -1,0 +1,7 @@
+INFILE=/raid/home/akumar17/thesis/sdn_switch/edk/implementation/system.ncd
+OUTFILE=/raid/home/akumar17/thesis/sdn_switch/edk/implementation/system.bit
+FAMILY=Virtex4
+PART=xc4vfx60-11ff1152
+WORKINGDIR=/raid/home/akumar17/thesis/sdn_switch/edk/implementation
+LICENSE=ISE
+USER_INFO=174150896_174150897_210563021_200

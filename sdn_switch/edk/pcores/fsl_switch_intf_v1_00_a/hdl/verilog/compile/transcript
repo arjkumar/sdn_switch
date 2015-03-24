@@ -1,0 +1,1048 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 3.13.0-45-generic
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -novopt top 
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.top
+# Loading work.top
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fsl_switch_intf
+# Loading work.fsl_switch_intf
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sdn_switch
+# Loading work.sdn_switch
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(236): Instantiation of 'input_arbiter' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(263): Instantiation of 'watchdog' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(285): Instantiation of 'vlan_remover' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(362): Instantiation of 'output_port_lookup' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(388): Instantiation of 'vlan_adder' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(443): Instantiation of 'egress_demux' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(489): Instantiation of 'udp_reg_master' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(537): Instantiation of 'openflow_switch_reg' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(557): Instantiation of 'reg_grp' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(590): Instantiation of 'nf2_reg_grp' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(647): Instantiation of 'sram_arbiter' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# ** Error: (vsim-3033) /home/akumar17/thesis/HW/sdn_switch.v(680): Instantiation of 'v_bytewrite_ram_1b' failed. The design unit was not found.
+#         Region: /top/user_data_path_1
+#         Searched libraries:
+#             /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work
+# Error loading design
+vlog -f top.vf
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling module fsl_switch_intf
+# -- Compiling module small_fifo
+# -- Compiling module fallthrough_small_fifo
+# -- Compiling module fallthrough_small_fifo_tester
+# -- Compiling module generic_cntr_regs
+# -- Compiling module generic_hw_regs
+# -- Compiling module generic_sw_regs
+# -- Compiling module generic_regs
+# -- Compiling module add_header
+# -- Compiling module in_arb_regs
+# -- Compiling module input_arbiter
+# -- Compiling module vlan_remover
+# -- Compiling module vlan_adder
+# -- Compiling module header_parser
+# -- Compiling module header_hash
+# -- Compiling module header_hash_tester
+# -- Compiling module exact_match
+# -- Compiling module match_arbiter
+# -- Compiling module opl_processor
+# -- Compiling module watchdog
+# -- Compiling module udp_reg_master
+# -- Compiling module nf2_reg_grp
+# -- Compiling module sram_arbiter
+# -- Compiling module output_port_lookup
+# -- Compiling module v_rams_11
+# -- Compiling module v_bytewrite_ram_1b
+# -- Compiling module egress_demux
+# -- Compiling module openflow_switch_reg
+# -- Compiling module reg_grp
+# -- Compiling module sdn_switch
+# -- Compiling module top
+# 
+# Top level modules:
+# 	fallthrough_small_fifo_tester
+# 	header_hash_tester
+# 	top
+vsim -novopt top
+# vsim -novopt top 
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.top
+# Loading work.top
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fsl_switch_intf
+# Loading work.fsl_switch_intf
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sdn_switch
+# Loading work.sdn_switch
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.input_arbiter
+# Loading work.input_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.in_arb_regs
+# Loading work.in_arb_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.watchdog
+# Loading work.watchdog
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_regs
+# Loading work.generic_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_remover
+# Loading work.vlan_remover
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fallthrough_small_fifo
+# Loading work.fallthrough_small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.small_fifo
+# Loading work.small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.output_port_lookup
+# Loading work.output_port_lookup
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_parser
+# Loading work.header_parser
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.exact_match
+# Loading work.exact_match
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_hash
+# Loading work.header_hash
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.match_arbiter
+# Loading work.match_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.opl_processor
+# Loading work.opl_processor
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_adder
+# Loading work.vlan_adder
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.egress_demux
+# Loading work.egress_demux
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.udp_reg_master
+# Loading work.udp_reg_master
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.openflow_switch_reg
+# Loading work.openflow_switch_reg
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.reg_grp
+# Loading work.reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.nf2_reg_grp
+# Loading work.nf2_reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sram_arbiter
+# Loading work.sram_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_bytewrite_ram_1b
+# Loading work.v_bytewrite_ram_1b
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.add_header
+# Loading work.add_header
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_sw_regs
+# Loading work.generic_sw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_hw_regs
+# Loading work.generic_hw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_cntr_regs
+# Loading work.generic_cntr_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_rams_11
+# Loading work.v_rams_11
+# ** Warning: (vsim-3017) top.v(143): [TFMPC] - Too few port connections. Expected 47, found 45.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (60 or 60) does not match connection size (1) for port 'cpu_in_reg_wr_data_bus'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'cpu_in_reg_ctrl'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'cpu_in_reg_rd_data_bus'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (60 or 60) does not match connection size (1) for port 'cpu_out_reg_wr_data_bus'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'cpu_out_reg_ctrl'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'cpu_out_reg_rd_data_bus'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3722) top.v(143): [TFMPC] - Missing connection for port 'debug_output'.
+# ** Warning: (vsim-3722) top.v(143): [TFMPC] - Missing connection for port 'debug_trig'.
+add wave \
+{sim:/top/clk } \
+{sim:/top/reset } \
+{sim:/top/FSL_S_Exists } \
+{sim:/top/FSL_S_Control } \
+{sim:/top/FSL_S_Data } \
+{sim:/top/FSL_S_Read } 
+add wave \
+{sim:/top/in_data[0] } 
+add wave \
+{sim:/top/in_ctrl[0] } 
+add wave \
+{sim:/top/in_wr[0] } 
+add wave \
+{sim:/top/in_rdy[0] } 
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/wave.do
+run -all
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# ** Note: $finish    : top.v(36)
+#    Time: 1100 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.v line 36
+vlog -f top.vf
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling module fsl_switch_intf
+# -- Compiling module small_fifo
+# -- Compiling module fallthrough_small_fifo
+# -- Compiling module fallthrough_small_fifo_tester
+# -- Compiling module generic_cntr_regs
+# -- Compiling module generic_hw_regs
+# -- Compiling module generic_sw_regs
+# -- Compiling module generic_regs
+# -- Compiling module add_header
+# -- Compiling module in_arb_regs
+# -- Compiling module input_arbiter
+# -- Compiling module vlan_remover
+# -- Compiling module vlan_adder
+# -- Compiling module header_parser
+# -- Compiling module header_hash
+# -- Compiling module header_hash_tester
+# -- Compiling module exact_match
+# -- Compiling module match_arbiter
+# -- Compiling module opl_processor
+# -- Compiling module watchdog
+# -- Compiling module udp_reg_master
+# -- Compiling module nf2_reg_grp
+# -- Compiling module sram_arbiter
+# -- Compiling module output_port_lookup
+# -- Compiling module v_rams_11
+# -- Compiling module v_bytewrite_ram_1b
+# -- Compiling module egress_demux
+# -- Compiling module openflow_switch_reg
+# -- Compiling module reg_grp
+# -- Compiling module sdn_switch
+# -- Compiling module top
+# 
+# Top level modules:
+# 	fallthrough_small_fifo_tester
+# 	header_hash_tester
+# 	top
+vsim -novopt top
+# vsim -novopt top 
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.top
+# Loading work.top
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fsl_switch_intf
+# Loading work.fsl_switch_intf
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sdn_switch
+# Loading work.sdn_switch
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.input_arbiter
+# Loading work.input_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.in_arb_regs
+# Loading work.in_arb_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.watchdog
+# Loading work.watchdog
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_regs
+# Loading work.generic_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_remover
+# Loading work.vlan_remover
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fallthrough_small_fifo
+# Loading work.fallthrough_small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.small_fifo
+# Loading work.small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.output_port_lookup
+# Loading work.output_port_lookup
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_parser
+# Loading work.header_parser
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.exact_match
+# Loading work.exact_match
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_hash
+# Loading work.header_hash
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.match_arbiter
+# Loading work.match_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.opl_processor
+# Loading work.opl_processor
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_adder
+# Loading work.vlan_adder
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.egress_demux
+# Loading work.egress_demux
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.udp_reg_master
+# Loading work.udp_reg_master
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.openflow_switch_reg
+# Loading work.openflow_switch_reg
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.reg_grp
+# Loading work.reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.nf2_reg_grp
+# Loading work.nf2_reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sram_arbiter
+# Loading work.sram_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_bytewrite_ram_1b
+# Loading work.v_bytewrite_ram_1b
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.add_header
+# Loading work.add_header
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_sw_regs
+# Loading work.generic_sw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_hw_regs
+# Loading work.generic_hw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_cntr_regs
+# Loading work.generic_cntr_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_rams_11
+# Loading work.v_rams_11
+# ** Warning: (vsim-3017) top.v(143): [TFMPC] - Too few port connections. Expected 47, found 45.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (60 or 60) does not match connection size (1) for port 'cpu_in_reg_wr_data_bus'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'cpu_in_reg_ctrl'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'cpu_in_reg_rd_data_bus'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (60 or 60) does not match connection size (1) for port 'cpu_out_reg_wr_data_bus'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'cpu_out_reg_ctrl'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3015) top.v(143): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'cpu_out_reg_rd_data_bus'.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3722) top.v(143): [TFMPC] - Missing connection for port 'debug_output'.
+# ** Warning: (vsim-3722) top.v(143): [TFMPC] - Missing connection for port 'debug_trig'.
+vlog -f top.vf
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling module fsl_switch_intf
+# -- Compiling module small_fifo
+# -- Compiling module fallthrough_small_fifo
+# -- Compiling module fallthrough_small_fifo_tester
+# -- Compiling module generic_cntr_regs
+# -- Compiling module generic_hw_regs
+# -- Compiling module generic_sw_regs
+# -- Compiling module generic_regs
+# -- Compiling module add_header
+# -- Compiling module in_arb_regs
+# -- Compiling module input_arbiter
+# -- Compiling module vlan_remover
+# -- Compiling module vlan_adder
+# -- Compiling module header_parser
+# -- Compiling module header_hash
+# -- Compiling module header_hash_tester
+# -- Compiling module exact_match
+# -- Compiling module match_arbiter
+# -- Compiling module opl_processor
+# -- Compiling module watchdog
+# -- Compiling module udp_reg_master
+# -- Compiling module nf2_reg_grp
+# -- Compiling module sram_arbiter
+# -- Compiling module output_port_lookup
+# -- Compiling module v_rams_11
+# -- Compiling module v_bytewrite_ram_1b
+# -- Compiling module egress_demux
+# -- Compiling module openflow_switch_reg
+# -- Compiling module reg_grp
+# -- Compiling module sdn_switch
+# -- Compiling module top
+# 
+# Top level modules:
+# 	fallthrough_small_fifo_tester
+# 	header_hash_tester
+# 	top
+vsim -novopt top
+# vsim -novopt top 
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.top
+# Loading work.top
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fsl_switch_intf
+# Loading work.fsl_switch_intf
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sdn_switch
+# Loading work.sdn_switch
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.input_arbiter
+# Loading work.input_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.in_arb_regs
+# Loading work.in_arb_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.watchdog
+# Loading work.watchdog
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_regs
+# Loading work.generic_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_remover
+# Loading work.vlan_remover
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fallthrough_small_fifo
+# Loading work.fallthrough_small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.small_fifo
+# Loading work.small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.output_port_lookup
+# Loading work.output_port_lookup
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_parser
+# Loading work.header_parser
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.exact_match
+# Loading work.exact_match
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_hash
+# Loading work.header_hash
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.match_arbiter
+# Loading work.match_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.opl_processor
+# Loading work.opl_processor
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_adder
+# Loading work.vlan_adder
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.egress_demux
+# Loading work.egress_demux
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.udp_reg_master
+# Loading work.udp_reg_master
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.openflow_switch_reg
+# Loading work.openflow_switch_reg
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.reg_grp
+# Loading work.reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.nf2_reg_grp
+# Loading work.nf2_reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sram_arbiter
+# Loading work.sram_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_bytewrite_ram_1b
+# Loading work.v_bytewrite_ram_1b
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.add_header
+# Loading work.add_header
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_sw_regs
+# Loading work.generic_sw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_hw_regs
+# Loading work.generic_hw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_cntr_regs
+# Loading work.generic_cntr_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_rams_11
+# Loading work.v_rams_11
+# ** Warning: (vsim-3017) top.v(143): [TFMPC] - Too few port connections. Expected 47, found 45.
+#         Region: /top/user_data_path_1
+# ** Warning: (vsim-3722) top.v(143): [TFMPC] - Missing connection for port 'debug_output'.
+# ** Warning: (vsim-3722) top.v(143): [TFMPC] - Missing connection for port 'debug_trig'.
+vlog -f top.vf
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling module fsl_switch_intf
+# -- Compiling module small_fifo
+# -- Compiling module fallthrough_small_fifo
+# -- Compiling module fallthrough_small_fifo_tester
+# -- Compiling module generic_cntr_regs
+# -- Compiling module generic_hw_regs
+# -- Compiling module generic_sw_regs
+# -- Compiling module generic_regs
+# -- Compiling module add_header
+# -- Compiling module in_arb_regs
+# -- Compiling module input_arbiter
+# -- Compiling module vlan_remover
+# -- Compiling module vlan_adder
+# -- Compiling module header_parser
+# -- Compiling module header_hash
+# -- Compiling module header_hash_tester
+# -- Compiling module exact_match
+# -- Compiling module match_arbiter
+# -- Compiling module opl_processor
+# -- Compiling module watchdog
+# -- Compiling module udp_reg_master
+# -- Compiling module nf2_reg_grp
+# -- Compiling module sram_arbiter
+# -- Compiling module output_port_lookup
+# -- Compiling module v_rams_11
+# -- Compiling module v_bytewrite_ram_1b
+# -- Compiling module egress_demux
+# -- Compiling module openflow_switch_reg
+# -- Compiling module reg_grp
+# -- Compiling module sdn_switch
+# -- Compiling module top
+# 
+# Top level modules:
+# 	fallthrough_small_fifo_tester
+# 	header_hash_tester
+# 	top
+vsim -novopt top
+# vsim -novopt top 
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.top
+# Loading work.top
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fsl_switch_intf
+# Loading work.fsl_switch_intf
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sdn_switch
+# Loading work.sdn_switch
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.input_arbiter
+# Loading work.input_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.in_arb_regs
+# Loading work.in_arb_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.watchdog
+# Loading work.watchdog
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_regs
+# Loading work.generic_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_remover
+# Loading work.vlan_remover
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fallthrough_small_fifo
+# Loading work.fallthrough_small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.small_fifo
+# Loading work.small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.output_port_lookup
+# Loading work.output_port_lookup
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_parser
+# Loading work.header_parser
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.exact_match
+# Loading work.exact_match
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_hash
+# Loading work.header_hash
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.match_arbiter
+# Loading work.match_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.opl_processor
+# Loading work.opl_processor
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_adder
+# Loading work.vlan_adder
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.egress_demux
+# Loading work.egress_demux
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.udp_reg_master
+# Loading work.udp_reg_master
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.openflow_switch_reg
+# Loading work.openflow_switch_reg
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.reg_grp
+# Loading work.reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.nf2_reg_grp
+# Loading work.nf2_reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sram_arbiter
+# Loading work.sram_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_bytewrite_ram_1b
+# Loading work.v_bytewrite_ram_1b
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.add_header
+# Loading work.add_header
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_sw_regs
+# Loading work.generic_sw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_hw_regs
+# Loading work.generic_hw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_cntr_regs
+# Loading work.generic_cntr_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_rams_11
+# Loading work.v_rams_11
+# ** Error: (vsim-3063) top.v(145): Port 'debug_data' not found in the connected module (44th connection).
+#         Region: /top/user_data_path_1
+# Error loading design
+vsim -novopt top
+# vsim -novopt top 
+# Loading work.top
+# Loading work.fsl_switch_intf
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+# Loading work.sdn_switch
+# Loading work.input_arbiter
+# Loading work.in_arb_regs
+# Loading work.watchdog
+# Loading work.generic_regs
+# Loading work.vlan_remover
+# Loading work.fallthrough_small_fifo
+# Loading work.small_fifo
+# Loading work.output_port_lookup
+# Loading work.header_parser
+# Loading work.exact_match
+# Loading work.header_hash
+# Loading work.match_arbiter
+# Loading work.opl_processor
+# Loading work.vlan_adder
+# Loading work.egress_demux
+# Loading work.udp_reg_master
+# Loading work.openflow_switch_reg
+# Loading work.reg_grp
+# Loading work.nf2_reg_grp
+# Loading work.sram_arbiter
+# Loading work.v_bytewrite_ram_1b
+# Loading work.add_header
+# Loading work.generic_sw_regs
+# Loading work.generic_hw_regs
+# Loading work.generic_cntr_regs
+# Loading work.v_rams_11
+# ** Error: (vsim-3063) top.v(145): Port 'debug_data' not found in the connected module (44th connection).
+#         Region: /top/user_data_path_1
+# Error loading design
+vlog -f top.vf
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling module fsl_switch_intf
+# -- Compiling module small_fifo
+# -- Compiling module fallthrough_small_fifo
+# -- Compiling module fallthrough_small_fifo_tester
+# -- Compiling module generic_cntr_regs
+# -- Compiling module generic_hw_regs
+# -- Compiling module generic_sw_regs
+# -- Compiling module generic_regs
+# -- Compiling module add_header
+# -- Compiling module in_arb_regs
+# -- Compiling module input_arbiter
+# -- Compiling module vlan_remover
+# -- Compiling module vlan_adder
+# -- Compiling module header_parser
+# -- Compiling module header_hash
+# -- Compiling module header_hash_tester
+# -- Compiling module exact_match
+# -- Compiling module match_arbiter
+# -- Compiling module opl_processor
+# -- Compiling module watchdog
+# -- Compiling module udp_reg_master
+# -- Compiling module nf2_reg_grp
+# -- Compiling module sram_arbiter
+# -- Compiling module output_port_lookup
+# -- Compiling module v_rams_11
+# -- Compiling module v_bytewrite_ram_1b
+# -- Compiling module egress_demux
+# -- Compiling module openflow_switch_reg
+# -- Compiling module reg_grp
+# -- Compiling module sdn_switch
+# -- Compiling module top
+# 
+# Top level modules:
+# 	fallthrough_small_fifo_tester
+# 	header_hash_tester
+# 	top
+vsim -novopt top
+# vsim -novopt top 
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.top
+# Loading work.top
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fsl_switch_intf
+# Loading work.fsl_switch_intf
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sdn_switch
+# Loading work.sdn_switch
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.input_arbiter
+# Loading work.input_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.in_arb_regs
+# Loading work.in_arb_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.watchdog
+# Loading work.watchdog
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_regs
+# Loading work.generic_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_remover
+# Loading work.vlan_remover
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fallthrough_small_fifo
+# Loading work.fallthrough_small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.small_fifo
+# Loading work.small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.output_port_lookup
+# Loading work.output_port_lookup
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_parser
+# Loading work.header_parser
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.exact_match
+# Loading work.exact_match
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_hash
+# Loading work.header_hash
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.match_arbiter
+# Loading work.match_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.opl_processor
+# Loading work.opl_processor
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_adder
+# Loading work.vlan_adder
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.egress_demux
+# Loading work.egress_demux
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.udp_reg_master
+# Loading work.udp_reg_master
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.openflow_switch_reg
+# Loading work.openflow_switch_reg
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.reg_grp
+# Loading work.reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.nf2_reg_grp
+# Loading work.nf2_reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sram_arbiter
+# Loading work.sram_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_bytewrite_ram_1b
+# Loading work.v_bytewrite_ram_1b
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.add_header
+# Loading work.add_header
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_sw_regs
+# Loading work.generic_sw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_hw_regs
+# Loading work.generic_hw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_cntr_regs
+# Loading work.generic_cntr_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_rams_11
+# Loading work.v_rams_11
+do wave.do
+run -all
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# ** Note: $finish    : top.v(36)
+#    Time: 1100 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.v line 36
+restart
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+run -all
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# ** Note: $finish    : top.v(36)
+#    Time: 1100 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.v line 36
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/wave.do
+vlog -f top.vf
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling module fsl_switch_intf
+# -- Compiling module small_fifo
+# -- Compiling module fallthrough_small_fifo
+# -- Compiling module fallthrough_small_fifo_tester
+# -- Compiling module generic_cntr_regs
+# -- Compiling module generic_hw_regs
+# -- Compiling module generic_sw_regs
+# -- Compiling module generic_regs
+# -- Compiling module add_header
+# -- Compiling module in_arb_regs
+# -- Compiling module input_arbiter
+# -- Compiling module vlan_remover
+# -- Compiling module vlan_adder
+# -- Compiling module header_parser
+# -- Compiling module header_hash
+# -- Compiling module header_hash_tester
+# -- Compiling module exact_match
+# -- Compiling module match_arbiter
+# -- Compiling module opl_processor
+# -- Compiling module watchdog
+# -- Compiling module udp_reg_master
+# -- Compiling module nf2_reg_grp
+# -- Compiling module sram_arbiter
+# -- Compiling module output_port_lookup
+# -- Compiling module v_rams_11
+# -- Compiling module v_bytewrite_ram_1b
+# -- Compiling module egress_demux
+# -- Compiling module openflow_switch_reg
+# -- Compiling module reg_grp
+# -- Compiling module sdn_switch
+# -- Compiling module top
+# 
+# Top level modules:
+# 	fallthrough_small_fifo_tester
+# 	header_hash_tester
+# 	top
+vsim -novopt top
+# vsim -novopt top 
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.top
+# Loading work.top
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fsl_switch_intf
+# Loading work.fsl_switch_intf
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sdn_switch
+# Loading work.sdn_switch
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.input_arbiter
+# Loading work.input_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.in_arb_regs
+# Loading work.in_arb_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.watchdog
+# Loading work.watchdog
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_regs
+# Loading work.generic_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_remover
+# Loading work.vlan_remover
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fallthrough_small_fifo
+# Loading work.fallthrough_small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.small_fifo
+# Loading work.small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.output_port_lookup
+# Loading work.output_port_lookup
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_parser
+# Loading work.header_parser
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.exact_match
+# Loading work.exact_match
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_hash
+# Loading work.header_hash
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.match_arbiter
+# Loading work.match_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.opl_processor
+# Loading work.opl_processor
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_adder
+# Loading work.vlan_adder
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.egress_demux
+# Loading work.egress_demux
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.udp_reg_master
+# Loading work.udp_reg_master
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.openflow_switch_reg
+# Loading work.openflow_switch_reg
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.reg_grp
+# Loading work.reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.nf2_reg_grp
+# Loading work.nf2_reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sram_arbiter
+# Loading work.sram_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_bytewrite_ram_1b
+# Loading work.v_bytewrite_ram_1b
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.add_header
+# Loading work.add_header
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_sw_regs
+# Loading work.generic_sw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_hw_regs
+# Loading work.generic_hw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_cntr_regs
+# Loading work.generic_cntr_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_rams_11
+# Loading work.v_rams_11
+do wave.do
+run -all
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# ** Note: $finish    : top.v(36)
+#    Time: 1100 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.v line 36
+vlog -f top.vf
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling module fsl_switch_intf
+# -- Compiling module small_fifo
+# -- Compiling module fallthrough_small_fifo
+# -- Compiling module fallthrough_small_fifo_tester
+# -- Compiling module generic_cntr_regs
+# -- Compiling module generic_hw_regs
+# -- Compiling module generic_sw_regs
+# -- Compiling module generic_regs
+# -- Compiling module add_header
+# -- Compiling module in_arb_regs
+# -- Compiling module input_arbiter
+# -- Compiling module vlan_remover
+# -- Compiling module vlan_adder
+# -- Compiling module header_parser
+# -- Compiling module header_hash
+# -- Compiling module header_hash_tester
+# -- Compiling module exact_match
+# -- Compiling module match_arbiter
+# -- Compiling module opl_processor
+# -- Compiling module watchdog
+# -- Compiling module udp_reg_master
+# -- Compiling module nf2_reg_grp
+# -- Compiling module sram_arbiter
+# -- Compiling module output_port_lookup
+# -- Compiling module v_rams_11
+# -- Compiling module v_bytewrite_ram_1b
+# -- Compiling module egress_demux
+# -- Compiling module openflow_switch_reg
+# -- Compiling module reg_grp
+# -- Compiling module sdn_switch
+# -- Compiling module top
+# 
+# Top level modules:
+# 	fallthrough_small_fifo_tester
+# 	header_hash_tester
+# 	top
+vsim -novopt top
+# vsim -novopt top 
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.top
+# Loading work.top
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fsl_switch_intf
+# Loading work.fsl_switch_intf
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fsl_switch_intf' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /top/fsl_switch_intf_i
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sdn_switch
+# Loading work.sdn_switch
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.input_arbiter
+# Loading work.input_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.in_arb_regs
+# Loading work.in_arb_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.watchdog
+# Loading work.watchdog
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_regs
+# Loading work.generic_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_remover
+# Loading work.vlan_remover
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.fallthrough_small_fifo
+# Loading work.fallthrough_small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.small_fifo
+# Loading work.small_fifo
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.output_port_lookup
+# Loading work.output_port_lookup
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_parser
+# Loading work.header_parser
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.exact_match
+# Loading work.exact_match
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.header_hash
+# Loading work.header_hash
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.match_arbiter
+# Loading work.match_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.opl_processor
+# Loading work.opl_processor
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.vlan_adder
+# Loading work.vlan_adder
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.egress_demux
+# Loading work.egress_demux
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.udp_reg_master
+# Loading work.udp_reg_master
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.openflow_switch_reg
+# Loading work.openflow_switch_reg
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.reg_grp
+# Loading work.reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.nf2_reg_grp
+# Loading work.nf2_reg_grp
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.sram_arbiter
+# Loading work.sram_arbiter
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_bytewrite_ram_1b
+# Loading work.v_bytewrite_ram_1b
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.add_header
+# Loading work.add_header
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_sw_regs
+# Loading work.generic_sw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_hw_regs
+# Loading work.generic_hw_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.generic_cntr_regs
+# Loading work.generic_cntr_regs
+# Refreshing /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/compile/work.v_rams_11
+# Loading work.v_rams_11
+do wave.do
+run -all
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# top.user_data_path_1.output_port_lookup.exact_match work.exact_match:FLOW_1_INDEX0_MATCH:80xxxxxxxxxxxxxx==x
+# ** Note: $finish    : top.v(36)
+#    Time: 100100 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.v line 36

@@ -1,0 +1,2 @@
+verilog fsl_switch_intf_v1_00_a /raid/home/akumar17/thesis/sdn_switch/edk/pcores/fsl_switch_intf_v1_00_a/hdl/verilog/fsl_switch_intf.v
+verilog work ../hdl/system_fsl_switch_intf_0_wrapper.v

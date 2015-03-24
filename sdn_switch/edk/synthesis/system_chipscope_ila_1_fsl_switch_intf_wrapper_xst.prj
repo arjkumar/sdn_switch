@@ -1,0 +1,2 @@
+VHDL chipscope_ila_1_fsl_switch_intf_v1_05_a /raid/home/akumar17/thesis/sdn_switch/edk/hdl/elaborate/chipscope_ila_1_fsl_switch_intf_v1_05_a/synhdl/vhdl/chipscope_ila_1_fsl_switch_intf.vhd
+vhdl work ../hdl/system_chipscope_ila_1_fsl_switch_intf_wrapper.vhd

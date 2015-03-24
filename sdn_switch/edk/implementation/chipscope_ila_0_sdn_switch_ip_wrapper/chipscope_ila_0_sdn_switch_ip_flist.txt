@@ -1,0 +1,15 @@
+# Output products list for <chipscope_ila_0_sdn_switch_ip>
+chipscope_ila_0_sdn_switch_ip.asy
+chipscope_ila_0_sdn_switch_ip.cdc
+chipscope_ila_0_sdn_switch_ip.constraints/chipscope_ila_0_sdn_switch_ip.ucf
+chipscope_ila_0_sdn_switch_ip.constraints/chipscope_ila_0_sdn_switch_ip.xdc
+chipscope_ila_0_sdn_switch_ip.gise
+chipscope_ila_0_sdn_switch_ip.ncf
+chipscope_ila_0_sdn_switch_ip.ngc
+chipscope_ila_0_sdn_switch_ip.ucf
+chipscope_ila_0_sdn_switch_ip.xco
+chipscope_ila_0_sdn_switch_ip.xdc
+chipscope_ila_0_sdn_switch_ip.xise
+chipscope_ila_0_sdn_switch_ip_flist.txt
+chipscope_ila_0_sdn_switch_ip_readme.txt
+chipscope_ila_0_sdn_switch_ip_xmdf.tcl

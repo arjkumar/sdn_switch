@@ -1,0 +1,32 @@
+Release 14.5 - par P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Mon Mar 23 11:54:17 2015
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 20 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   DDR2_SDRAM/DDR2_SDRAM/PLB_2_INST.plbv46_pim_2/comp_plbv46_pim/GENERATE_PLB_PLBV46_PIM.PIM_WRITE_MODULE/Madd_word_count_share0000_cy<6>
+   chipscope_vio_0/chipscope_vio_0/i_chipscope_vio_0/U0/I_VIO/reset_f_edge/iDOUT<1>
+   dlmb_LMB_ABus<30>
+   dlmb_LMB_ABus<31>
+   fsl_v20_0/FSL_Control_IRQ
+   jtagppc_cntlr_inst/DBGC405DEBUGHALT0
+   jtagppc_cntlr_inst/DBGC405DEBUGHALT1
+   jtagppc_cntlr_inst/jtagppc_cntlr_inst/C405JTGTDOEN
+   ppc405_0/ppc405_0/C405PLBDCUCACHEABLE
+   ppc405_0/ppc405_0/C405PLBDCUGUARDED
+   ppc405_0/ppc405_0/C405PLBDCUU0ATTR
+   ppc405_0/ppc405_0/C405PLBDCUWRITETHRU
+   ppc405_0/ppc405_0/C405PLBICUCACHEABLE
+   ppc405_0/ppc405_0/C405PLBICUU0ATTR
+   ppc405_0_jtagppc_bus_C405JTGTDOEN
+   proc_sys_reset_0/proc_sys_reset_0/Mshreg_Core_Reset_Req_1_d2
+   sdn_switch_0/N76
+   sdn_switch_0/N80
+   xps_bram_if_cntlr_1_port_BRAM_Addr<30>
+   xps_bram_if_cntlr_1_port_BRAM_Addr<31>
+
+

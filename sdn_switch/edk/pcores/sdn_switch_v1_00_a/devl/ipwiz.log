@@ -1,0 +1,307 @@
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit sdn_switch is verilog
+...
+INFO:EDK:3391 - Create temporary xst project file:
+   /raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch.prj
+Compiling verilog file
+"/raid/opt.x86_64/xilinx/14.5/ISE_DS/ISE/verilog/src/iSE/unisim_comp.v"
+Compiling verilog file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch.prj"
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/output_port_lookup.h"
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/openflow_switch.h"
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/small_fifo.v"
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/small_fifo_depth.v"
+Module <small_fifo> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/fallthrough_small_fifo.v"
+Module <small_fifo_depth> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/crc_func_0_d256.v"
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/crc_func_1_d256.v"
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/generic_cntr_regs.v"
+Module <fallthrough_small_fifo> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/generic_hw_regs.v"
+Module <generic_cntr_regs> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/generic_sw_regs.v"
+Module <generic_hw_regs> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/generic_regs.v"
+Module <generic_sw_regs> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/add_header.v"
+Module <generic_regs> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/in_arb_regs.v"
+Module <add_header> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/input_arbiter.v"
+Module <in_arb_regs> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/vlan_remover.v"
+Module <input_arbiter> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/vlan_adder.v"
+Module <vlan_remover> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/header_parser.v"
+Module <vlan_adder> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/header_hash.v"
+Module <header_parser> compiled
+Module <header_hash> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/exact_match.v"
+Module <header_hash_tester> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/match_arbiter.v"
+Module <exact_match> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/opl_processor.v"
+Module <match_arbiter> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/watchdog.v"
+Module <opl_processor> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/udp_reg_master.v"
+Module <watchdog> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/nf2_reg_grp.v"
+Module <udp_reg_master> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/sram_arbiter.v"
+Module <nf2_reg_grp> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/output_port_lookup.v"
+Module <sram_arbiter> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/v_rams_11.v"
+Module <output_port_lookup> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/v_bytewrite_ram_1b.v"
+Module <v_rams_11> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/egress_demux.v"
+Module <v_bytewrite_ram_1b> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/reg_grp.v"
+Module <egress_demux> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/openflow_switch_reg.v"
+Module <reg_grp> compiled
+Compiling verilog include file
+"/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog
+/sdn_switch.v"
+Module <openflow_switch_reg> compiled
+Module <sdn_switch> compiled
+
+
+Analyzing Verilog code ...
+INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
+INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
+PARAMETER NUM_IQ_BITS has localparam
+PARAMETER IN_ARB_STAGE_NUM has localparam
+PARAMETER OP_LUT_STAGE_NUM has localparam
+Copying file output_port_lookup.h to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file openflow_switch.h to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file small_fifo.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file small_fifo_depth.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file fallthrough_small_fifo.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file crc_func_0_d256.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file crc_func_1_d256.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file generic_cntr_regs.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file generic_hw_regs.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file generic_sw_regs.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file generic_regs.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file add_header.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file in_arb_regs.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file input_arbiter.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file vlan_remover.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file vlan_adder.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file header_parser.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file header_hash.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file exact_match.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file match_arbiter.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file opl_processor.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file watchdog.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file udp_reg_master.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file nf2_reg_grp.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file sram_arbiter.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file output_port_lookup.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file v_rams_11.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file v_bytewrite_ram_1b.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file egress_demux.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file reg_grp.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file openflow_switch_reg.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+Copying file sdn_switch.v to
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a/hdl/verilog/
+...
+
+Thank you for using Create and Import Peripheral Wizard! Please find your
+imported peripheral under
+/raid/home/akumar17/thesis/sdn_switch/edk/pcores/sdn_switch_v1_00_a.
+
+Summary:
+
+  Logical library     : sdn_switch_v1_00_a
+  Version             : 1.00.a
+  Bus interface(s)    : None
+
+The following sub-directories will be created:
+
+  - sdn_switch_v1_00_a/data
+  - sdn_switch_v1_00_a/hdl
+  - sdn_switch_v1_00_a/hdl/verilog
+  - sdn_switch_v1_00_a/hdl/vhdl
+
+The following HDL source files will be copied into the
+sdn_switch_v1_00_a/hdl/verilog directory:
+
+  - output_port_lookup.h
+  - openflow_switch.h
+  - small_fifo.v
+  - small_fifo_depth.v
+  - fallthrough_small_fifo.v
+  - crc_func_0_d256.v
+  - crc_func_1_d256.v
+  - generic_cntr_regs.v
+  - generic_hw_regs.v
+  - generic_sw_regs.v
+  - generic_regs.v
+  - add_header.v
+  - in_arb_regs.v
+  - input_arbiter.v
+  - vlan_remover.v
+  - vlan_adder.v
+  - header_parser.v
+  - header_hash.v
+  - exact_match.v
+  - match_arbiter.v
+  - opl_processor.v
+  - watchdog.v
+  - udp_reg_master.v
+  - nf2_reg_grp.v
+  - sram_arbiter.v
+  - output_port_lookup.v
+  - v_rams_11.v
+  - v_bytewrite_ram_1b.v
+  - egress_demux.v
+  - reg_grp.v
+  - openflow_switch_reg.v
+  - sdn_switch.v
+
+
+The following files will be created under the sdn_switch_v1_00_a/data directory:
+
+  - sdn_switch_v2_1_0.mpd
+  - sdn_switch_v2_1_0.pao
+
+

@@ -1,0 +1,39 @@
+/*
+ * Empty C++ Application
+ */
+#include <iostream>
+#include <stdio.h>
+#include "sdn_ctlr_intf.h"
+#include "sdn_cntlr_classes.cc"
+
+//-----------------------------------------
+// Delay
+//-----------------------------------------
+void delay(uint32_t value){
+  uint32_t i,delay_val;
+  for(i=0;i<100*value;i++){
+	  delay_val++;
+}
+
+
+bool cpu_bus_write::toggle_val = 0;
+
+int main()
+{
+	uint32_t     *chipscope_enable_p, *reset_p;
+	install_flow install_flow;
+	read_status  read_status;
+	status       status;
+	cpu_bus_read cpu_bus_read;
+
+
+	chipscope_enable_p = CHIPSCOPE_EN;
+	reset_p            = RESET;
+
+
+
+	//Wait until chipscope VIO sets the value
+	while(*chipscope_enable_p == 0) {;}
+
+	return 0;
+}

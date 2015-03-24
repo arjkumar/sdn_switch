@@ -1,0 +1,14 @@
+/*
+ * Empty C++ Application
+ */
+#include <iostream>
+#include <stdio.h>
+#include "sdn_ctlr_intf.h"
+
+
+bool cpu_bus_write::toggle_val = 0;
+
+int main()
+{
+	return 0;
+}

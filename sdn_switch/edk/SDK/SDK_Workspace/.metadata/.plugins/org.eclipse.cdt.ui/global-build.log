@@ -1,0 +1,3666 @@
+17:50:12 **** Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+17:51:13 **** Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6882	    376	   2230	   9488	   2510	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+17:51:28 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6882	    376	  32950	  40208	   9d10	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+17:59:06 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6882	    376	  32950	  40208	   9d10	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:01:52 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:02:44 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6882	    376	  32950	  40208	   9d10	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:04:44 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6882	    376	  32950	  40208	   9d10	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:09:09 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:45:13: error: ‘XPAR_FSL_FSL_SWITCH_INTF_0_INPUT_SLOT_ID’ undeclared (first use in this function)
+../src/helloworld.c:45:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:45:6: warning: unused variable ‘slot’ [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+18:14:29 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:45:13: error: ‘input_slot_id’ undeclared (first use in this function)
+../src/helloworld.c:45:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:45:6: warning: unused variable ‘slot’ [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+18:14:30 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:45:13: error: ‘input_slot_id’ undeclared (first use in this function)
+../src/helloworld.c:45:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:45:6: warning: unused variable ‘slot’ [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+18:14:42 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+Finished building: ../src/helloworld.c
+ 
+../src/helloworld.c:45:6: warning: unused variable ‘slot’ [-Wunused-variable]
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6886	    376	  32944	  40206	   9d0e	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:16:02 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:46:6: warning: unused variable ‘slot’ [-Wunused-variable]
+/tmp/ccbGWuTf.s: Assembler messages:
+/tmp/ccbGWuTf.s:59: Error: register expected, but saw 'rfslin'
+/tmp/ccbGWuTf.s:59: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:16:12 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:46:6: warning: unused variable ‘slot’ [-Wunused-variable]
+/tmp/ccb1b5Ih.s: Assembler messages:
+/tmp/ccb1b5Ih.s:59: Error: register expected, but saw 'rfslin'
+/tmp/ccb1b5Ih.s:59: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:16:34 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:46:6: warning: unused variable ‘slot’ [-Wunused-variable]
+/tmp/cchNeQIm.s: Assembler messages:
+/tmp/cchNeQIm.s:59: Error: register expected, but saw 'rfslsl'
+/tmp/cchNeQIm.s:59: Warning: ignoring operands: rfslslot 
+make: *** [src/helloworld.o] Error 1
+18:16:35 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:46:6: warning: unused variable ‘slot’ [-Wunused-variable]
+/tmp/ccFbAmic.s: Assembler messages:
+/tmp/ccFbAmic.s:59: Error: register expected, but saw 'rfslsl'
+/tmp/ccFbAmic.s:59: Warning: ignoring operands: rfslslot 
+make: *** [src/helloworld.o] Error 1
+18:18:11 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:36:0:
+../src/fsl_switch_intf.h:45:50: error: unknown type name ‘uint32_t’
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:57:6: warning: implicit declaration of function ‘fsl_switch_intf’ [-Wimplicit-function-declaration]
+make: *** [src/helloworld.o] Error 1
+18:18:13 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:36:0:
+../src/fsl_switch_intf.h:45:50: error: unknown type name ‘uint32_t’
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:57:6: warning: implicit declaration of function ‘fsl_switch_intf’ [-Wimplicit-function-declaration]
+make: *** [src/helloworld.o] Error 1
+18:18:34 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:37:0:
+../src/fsl_switch_intf.h: In function ‘fsl_switch_intf’:
+../src/fsl_switch_intf.h:49:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:7: warning: passing argument 2 of ‘fsl_switch_intf’ makes integer from pointer without a cast [enabled by default]
+../src/fsl_switch_intf.h:45:6: note: expected ‘uint32_t’ but argument is of type ‘unsigned int *’
+make: *** [src/helloworld.o] Error 1
+18:18:36 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:37:0:
+../src/fsl_switch_intf.h: In function ‘fsl_switch_intf’:
+../src/fsl_switch_intf.h:49:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:7: warning: passing argument 2 of ‘fsl_switch_intf’ makes integer from pointer without a cast [enabled by default]
+../src/fsl_switch_intf.h:45:6: note: expected ‘uint32_t’ but argument is of type ‘unsigned int *’
+make: *** [src/helloworld.o] Error 1
+18:19:00 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:37:0:
+../src/fsl_switch_intf.h: In function ‘fsl_switch_intf’:
+../src/fsl_switch_intf.h:50:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:7: warning: passing argument 2 of ‘fsl_switch_intf’ makes integer from pointer without a cast [enabled by default]
+../src/fsl_switch_intf.h:46:6: note: expected ‘uint32_t’ but argument is of type ‘unsigned int *’
+make: *** [src/helloworld.o] Error 1
+18:19:02 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:37:0:
+../src/fsl_switch_intf.h: In function ‘fsl_switch_intf’:
+../src/fsl_switch_intf.h:50:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:7: warning: passing argument 2 of ‘fsl_switch_intf’ makes integer from pointer without a cast [enabled by default]
+../src/fsl_switch_intf.h:46:6: note: expected ‘uint32_t’ but argument is of type ‘unsigned int *’
+make: *** [src/helloworld.o] Error 1
+18:19:40 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:7: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/fsl_switch_intf.h:46:6: note: expected ‘uint32_t *’ but argument is of type ‘unsigned int *’
+/tmp/ccRCRzJn.s: Assembler messages:
+/tmp/ccRCRzJn.s:32: Error: register expected, but saw 'rfslin'
+/tmp/ccRCRzJn.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:19:42 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:7: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/fsl_switch_intf.h:46:6: note: expected ‘uint32_t *’ but argument is of type ‘unsigned int *’
+/tmp/ccLLXbeg.s: Assembler messages:
+/tmp/ccLLXbeg.s:32: Error: register expected, but saw 'rfslin'
+/tmp/ccLLXbeg.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:19:48 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:7: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/fsl_switch_intf.h:46:6: note: expected ‘uint32_t *’ but argument is of type ‘unsigned int *’
+/tmp/cc3UE2mb.s: Assembler messages:
+/tmp/cc3UE2mb.s:32: Error: register expected, but saw 'rfslin'
+/tmp/cc3UE2mb.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:19:50 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:7: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/fsl_switch_intf.h:46:6: note: expected ‘uint32_t *’ but argument is of type ‘unsigned int *’
+/tmp/ccm2xdF0.s: Assembler messages:
+/tmp/ccm2xdF0.s:32: Error: register expected, but saw 'rfslin'
+/tmp/ccm2xdF0.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:20:27 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+/tmp/ccavNYlk.s: Assembler messages:
+/tmp/ccavNYlk.s:32: Error: register expected, but saw 'rfslin'
+/tmp/ccavNYlk.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:20:39 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+/tmp/ccranWAB.s: Assembler messages:
+/tmp/ccranWAB.s:32: Error: register expected, but saw 'rfslin'
+/tmp/ccranWAB.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:21:16 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+/tmp/ccrJEXV7.s: Assembler messages:
+/tmp/ccrJEXV7.s:32: Error: register expected, but saw 'rfslin'
+/tmp/ccrJEXV7.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:21:18 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+/tmp/cckHgBHH.s: Assembler messages:
+/tmp/cckHgBHH.s:32: Error: register expected, but saw 'rfslin'
+/tmp/cckHgBHH.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:22:10 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+/tmp/cc36un3e.s: Assembler messages:
+/tmp/cc36un3e.s:32: Error: register expected, but saw 'rfslin'
+/tmp/cc36un3e.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:22:11 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+/tmp/ccbNvqeg.s: Assembler messages:
+/tmp/ccbNvqeg.s:32: Error: register expected, but saw 'rfslin'
+/tmp/ccbNvqeg.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:23:43 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7066	    376	  32950	  40392	   9dc8	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:23:59 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:24:10 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:24:24 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:24:26 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:24:29 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:24:35 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:29:22 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:57:2: error: ‘packet’ undeclared (first use in this function)
+../src/helloworld.c:57:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+18:29:43 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:55:5: error: unknown type name ‘packet_frame’
+../src/helloworld.c:58:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:59:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:60:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:61:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:62:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:63:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:64:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:65:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:66:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:67:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:69:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:70:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:71:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:72:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:73:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:74:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:75:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:76:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:77:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:78:8: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:55:18: warning: variable ‘packet’ set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld.o] Error 1
+18:30:00 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:55:5: error: unknown type name ‘packet_frame’
+../src/helloworld.c:58:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:59:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:60:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:61:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:62:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:63:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:64:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:65:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:66:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:67:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:69:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:70:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:71:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:72:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:73:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:74:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:75:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:76:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:77:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:78:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:55:18: warning: variable ‘packet’ set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld.o] Error 1
+18:31:42 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:55:5: error: unknown type name ‘packet_frame’
+../src/helloworld.c:55:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:55:28: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+../src/helloworld.c:55:42: error: ‘packet_frame’ undeclared (first use in this function)
+../src/helloworld.c:55:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:55:5: error: too many arguments to function ‘malloc’
+../src/helloworld.c:58:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:59:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:60:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:61:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:62:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:63:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:64:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:65:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:66:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:67:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:69:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:70:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:71:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:72:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:73:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:74:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:75:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:76:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:77:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:78:11: error: request for member ‘ctrl’ in something not a structure or union
+make: *** [src/helloworld.o] Error 1
+18:31:45 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:55:5: error: unknown type name ‘packet_frame’
+../src/helloworld.c:55:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:55:28: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+../src/helloworld.c:55:42: error: ‘packet_frame’ undeclared (first use in this function)
+../src/helloworld.c:55:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:55:5: error: too many arguments to function ‘malloc’
+../src/helloworld.c:58:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:59:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:60:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:61:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:62:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:63:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:64:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:65:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:66:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:67:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:69:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:70:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:71:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:72:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:73:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:74:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:75:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:76:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:77:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:78:11: error: request for member ‘ctrl’ in something not a structure or union
+make: *** [src/helloworld.o] Error 1
+18:32:06 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:57:5: error: unknown type name ‘packet_frame’
+../src/helloworld.c:57:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:57:28: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+../src/helloworld.c:57:42: error: ‘packet_frame’ undeclared (first use in this function)
+../src/helloworld.c:57:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:57:5: error: too many arguments to function ‘malloc’
+../src/helloworld.c:60:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:61:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:62:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:63:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:64:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:65:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:66:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:67:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:68:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:69:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:71:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:72:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:73:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:74:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:75:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:76:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:77:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:78:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:79:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:80:11: error: request for member ‘ctrl’ in something not a structure or union
+make: *** [src/helloworld.o] Error 1
+18:37:19 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:57:5: error: unknown type name ‘packet_frame’
+../src/helloworld.c:57:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:57:28: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+../src/helloworld.c:57:42: error: ‘packet_frame’ undeclared (first use in this function)
+../src/helloworld.c:57:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:61:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:62:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:63:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:64:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:65:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:66:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:67:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:68:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:69:11: error: request for member ‘data’ in something not a structure or union
+../src/helloworld.c:71:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:72:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:73:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:74:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:75:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:76:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:77:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:78:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:79:11: error: request for member ‘ctrl’ in something not a structure or union
+../src/helloworld.c:80:11: error: request for member ‘ctrl’ in something not a structure or union
+make: *** [src/helloworld.o] Error 1
+18:39:11 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:57:12: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:57:35: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+../src/helloworld.c:57:49: error: ‘packet_frame’ undeclared (first use in this function)
+../src/helloworld.c:57:49: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+18:40:31 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:58:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:58:14: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+/tmp/cc0rPJkQ.s: Assembler messages:
+/tmp/cc0rPJkQ.s:32: Error: register expected, but saw 'rfslin'
+/tmp/cc0rPJkQ.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:40:47 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:58:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:58:31: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+/tmp/cczjwlbY.s: Assembler messages:
+/tmp/cczjwlbY.s:32: Error: register expected, but saw 'rfslin'
+/tmp/cczjwlbY.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:40:57 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:58:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:58:31: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+/tmp/cc9KgMgQ.s: Assembler messages:
+/tmp/cc9KgMgQ.s:32: Error: register expected, but saw 'rfslin'
+/tmp/cc9KgMgQ.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:46:50 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:58:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:58:31: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+/tmp/ccATI3As.s: Assembler messages:
+/tmp/ccATI3As.s:32: Error: register expected, but saw 'rfslin'
+/tmp/ccATI3As.s:32: Warning: ignoring operands: rfslinput_slot_id 
+make: *** [src/helloworld.o] Error 1
+18:47:01 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:58:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:58:31: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11990	   1416	  33008	  46414	   b54e	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:47:30 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:58:22: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:58:38: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11990	   1416	  33008	  46414	   b54e	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:47:38 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:58:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:58:31: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11990	   1416	  33008	  46414	   b54e	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:47:42 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:50:14 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:87:17: error: incompatible types when assigning to type ‘unsigned int’ from type ‘struct packet_frame’
+make: *** [src/helloworld.o] Error 1
+18:51:09 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:61:2: error: ‘packet’ undeclared (first use in this function)
+../src/helloworld.c:61:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:84:11: warning: variable ‘idx’ set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld.o] Error 1
+18:51:33 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:58:5: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+../src/helloworld.c:58:31: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+../src/helloworld.c:87:17: error: incompatible types when assigning to type ‘unsigned int’ from type ‘Packet_frame’
+make: *** [src/helloworld.o] Error 1
+18:52:31 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:89:17: error: incompatible types when assigning to type ‘unsigned int’ from type ‘Packet_frame’
+make: *** [src/helloworld.o] Error 1
+18:52:33 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:89:17: error: incompatible types when assigning to type ‘unsigned int’ from type ‘Packet_frame’
+make: *** [src/helloworld.o] Error 1
+18:53:12 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:89:31: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:86:11: warning: variable ‘idx’ set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld.o] Error 1
+18:53:29 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:89:33: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:86:11: warning: variable ‘idx’ set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld.o] Error 1
+19:05:02 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:89:33: error: subscripted value is neither array nor pointer nor vector
+../src/helloworld.c:99:6: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/fsl_switch_intf.h:19:6: note: expected ‘unsigned int *’ but argument is of type ‘uint32_t *’
+../src/helloworld.c:86:11: warning: variable ‘idx’ set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld.o] Error 1
+19:05:31 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:99:6: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/fsl_switch_intf.h:19:6: note: expected ‘unsigned int *’ but argument is of type ‘uint32_t *’
+Finished building: ../src/helloworld.c
+../src/helloworld.c:89:25: warning: ‘idx’ is used uninitialized in this function [-Wuninitialized]
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11942	   1416	  33008	  46366	   b51e	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+19:07:50 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:102:6: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/fsl_switch_intf.h:19:6: note: expected ‘unsigned int *’ but argument is of type ‘uint32_t *’
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12058	   1416	  33014	  46488	   b598	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+19:12:02 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:94:8: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/fsl_switch_intf.h:19:6: note: expected ‘unsigned int *’ but argument is of type ‘uint32_t *’
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12078	   1416	  33008	  46502	   b5a6	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+19:32:03 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+19:49:59 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+19:50:00 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+21:48:21 **** Auto Build of project mb_bsp ****
+make -k all 
+Finished building libraries
+21:48:32 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+02:01:18 **** Auto Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+02:01:26 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+02:03:29 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:42:6: error: conflicting types for ‘fsl_switch_intf’
+../src/fsl_switch_intf.h:19:6: note: previous definition of ‘fsl_switch_intf’ was here
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:97:8: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/helloworld.c:42:6: note: expected ‘unsigned int *’ but argument is of type ‘uint32_t *’
+make: *** [src/helloworld.o] Error 1
+02:03:57 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:42:6: error: conflicting types for ‘fsl_switch_intf’
+../src/fsl_switch_intf.h:19:6: note: previous definition of ‘fsl_switch_intf’ was here
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:97:8: warning: passing argument 2 of ‘fsl_switch_intf’ from incompatible pointer type [enabled by default]
+../src/helloworld.c:42:6: note: expected ‘unsigned int *’ but argument is of type ‘uint32_t *’
+make: *** [src/helloworld.o] Error 1
+02:04:31 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15162	   1420	  33018	  49600	   c1c0	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+02:04:37 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+02:57:00 **** Auto Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+02:57:08 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+14:24:53 **** Auto Build of project mb_bsp ****
+make -k all 
+Finished building libraries
+14:25:05 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:20:51 **** Auto Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+18:21:00 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+21:13:46 **** Build of project ppc_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe ppc405_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe ppc405_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+powerpc-eabi-ar: creating ../../../lib/libxil.a
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling uartlite
+Compiling bram
+Compiling intc
+Compiling cpu_ppc405
+Running execs_generate.
+Finished building libraries
+21:14:49 **** Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31008	   3500	   2312	  36820	   8fd4	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+21:35:25 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+21:36:11 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+21:36:14 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+21:36:15 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+21:37:27 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+22:47:41 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+18:05:03 **** Auto Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+18:05:11 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:05:12 **** Auto Build of project ppc_bsp ****
+make -k all 
+Finished building libraries
+18:08:21 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+18:41:38 **** Auto Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+18:41:48 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:41:49 **** Auto Build of project ppc_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe ppc405_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe ppc405_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+powerpc-eabi-ar: creating ../../../lib/libxil.a
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling uartlite
+Compiling bram
+Compiling intc
+Compiling cpu_ppc405
+Running execs_generate.
+Finished building libraries
+18:41:58 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc:9:26: error: register_map.h: No such file or directory
+../src/sdn_cntlr_classes.cc:15: error: ISO C++ forbids declaration of ‘uint32_t’ with no type
+../src/sdn_cntlr_classes.cc:15: error: expected ‘;’ before ‘data_p’
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: ‘data_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:20: error: ‘CPU_BUS_WR_DATA’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:21: error: ‘addr_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:21: error: ‘CPU_BUS_WR_ADDR’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:22: error: ‘rd_wr_L_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:22: error: ‘CPU_BUS_RD_WR_L’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:23: error: ‘ctrl_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:23: error: ‘CPU_BUS_WR_CTRL’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:24: error: ‘toggle_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:24: error: ‘CPU_BUS_WR_TOGGLE’ was not declared in this scope
+../src/sdn_cntlr_classes.cc: In member function ‘void cpu_bus_write::toggle()’:
+../src/sdn_cntlr_classes.cc:27: error: ‘toggle_p’ was not declared in this scope
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:41:58 **** Clean-only build of project mb_bsp ****
+make -k clean 
+rm -rf microblaze_0
+18:41:59 **** Clean-only build of project ppc_bsp ****
+make -k clean 
+rm -rf ppc405_0
+18:41:59 **** Clean-only build of configuration Debug for project packet_tx ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  packet_tx.elf.size  packet_tx.elf.elfcheck  packet_tx.elf
+ 
+18:41:59 **** Clean-only build of configuration Debug for project sdn_cntlr ****
+make clean 
+rm -rf  ./src/main.o ./src/sdn_cntlr_classes.o  ./src/main.d ./src/sdn_cntlr_classes.d  sdn_cntlr.elf.size  sdn_cntlr.elf.elfcheck  sdn_cntlr.elf
+ 
+18:41:59 **** Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+18:42:07 **** Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15162	   1420	  33018	  49600	   c1c0	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+18:42:09 **** Build of project ppc_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe ppc405_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe ppc405_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+powerpc-eabi-ar: creating ../../../lib/libxil.a
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling uartlite
+Compiling bram
+Compiling intc
+Compiling cpu_ppc405
+Running execs_generate.
+Finished building libraries
+18:42:17 **** Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc:9:26: error: register_map.h: No such file or directory
+../src/sdn_cntlr_classes.cc:15: error: ISO C++ forbids declaration of ‘uint32_t’ with no type
+../src/sdn_cntlr_classes.cc:15: error: expected ‘;’ before ‘data_p’
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: ‘data_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:20: error: ‘CPU_BUS_WR_DATA’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:21: error: ‘addr_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:21: error: ‘CPU_BUS_WR_ADDR’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:22: error: ‘rd_wr_L_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:22: error: ‘CPU_BUS_RD_WR_L’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:23: error: ‘ctrl_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:23: error: ‘CPU_BUS_WR_CTRL’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:24: error: ‘toggle_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:24: error: ‘CPU_BUS_WR_TOGGLE’ was not declared in this scope
+../src/sdn_cntlr_classes.cc: In member function ‘void cpu_bus_write::toggle()’:
+../src/sdn_cntlr_classes.cc:27: error: ‘toggle_p’ was not declared in this scope
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:43:42 **** Clean-only build of configuration Debug for project sdn_cntlr ****
+make clean 
+rm -rf  ./src/main.o ./src/sdn_cntlr_classes.o  ./src/main.d ./src/sdn_cntlr_classes.d  sdn_cntlr.elf.size  sdn_cntlr.elf.elfcheck  sdn_cntlr.elf
+ 
+18:43:42 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc:15: error: ISO C++ forbids declaration of ‘uint32_t’ with no type
+../src/sdn_cntlr_classes.cc:15: error: expected ‘;’ before ‘data_p’
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: ‘data_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:21: error: ‘addr_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:22: error: ‘rd_wr_L_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:23: error: ‘ctrl_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:24: error: ‘toggle_p’ was not declared in this scope
+../src/sdn_cntlr_classes.cc: In member function ‘void cpu_bus_write::toggle()’:
+../src/sdn_cntlr_classes.cc:27: error: ‘toggle_p’ was not declared in this scope
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:44:08 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:21: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:22: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:23: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:24: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:44:28 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: invalid conversion from ‘int’ to ‘volatile int*’
+../src/sdn_cntlr_classes.cc:21: error: invalid conversion from ‘int’ to ‘volatile int*’
+../src/sdn_cntlr_classes.cc:22: error: invalid conversion from ‘int’ to ‘volatile int*’
+../src/sdn_cntlr_classes.cc:23: error: invalid conversion from ‘int’ to ‘volatile int*’
+../src/sdn_cntlr_classes.cc:24: error: invalid conversion from ‘int’ to ‘volatile int*’
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:44:31 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:44:31 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: invalid conversion from ‘int’ to ‘volatile int*’
+../src/sdn_cntlr_classes.cc:21: error: invalid conversion from ‘int’ to ‘volatile int*’
+../src/sdn_cntlr_classes.cc:22: error: invalid conversion from ‘int’ to ‘volatile int*’
+../src/sdn_cntlr_classes.cc:23: error: invalid conversion from ‘int’ to ‘volatile int*’
+../src/sdn_cntlr_classes.cc:24: error: invalid conversion from ‘int’ to ‘volatile int*’
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:44:39 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: invalid conversion from ‘int’ to ‘int*’
+../src/sdn_cntlr_classes.cc:21: error: invalid conversion from ‘int’ to ‘int*’
+../src/sdn_cntlr_classes.cc:22: error: invalid conversion from ‘int’ to ‘int*’
+../src/sdn_cntlr_classes.cc:23: error: invalid conversion from ‘int’ to ‘int*’
+../src/sdn_cntlr_classes.cc:24: error: invalid conversion from ‘int’ to ‘int*’
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:44:41 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+18:44:42 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: invalid conversion from ‘int’ to ‘int*’
+../src/sdn_cntlr_classes.cc:21: error: invalid conversion from ‘int’ to ‘int*’
+../src/sdn_cntlr_classes.cc:22: error: invalid conversion from ‘int’ to ‘int*’
+../src/sdn_cntlr_classes.cc:23: error: invalid conversion from ‘int’ to ‘int*’
+../src/sdn_cntlr_classes.cc:24: error: invalid conversion from ‘int’ to ‘int*’
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:45:04 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:21: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:22: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:23: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:24: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:47:23 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:21: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:22: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:23: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:24: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:47:54 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In constructor ‘cpu_bus_write::cpu_bus_write()’:
+../src/sdn_cntlr_classes.cc:20: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:21: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:22: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:23: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+../src/sdn_cntlr_classes.cc:24: error: invalid conversion from ‘int’ to ‘volatile uint32_t*’
+make: *** [src/sdn_cntlr_classes.o] Error 1
+18:48:07 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:04:18 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+19:04:29 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:07:39 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:08:13 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:09:42 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:12:22 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+19:12:23 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+19:13:53 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:18:49 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc:119: error: expected unqualified-id before ‘)’ token
+make: *** [src/sdn_cntlr_classes.o] Error 1
+19:18:57 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:27:20 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In member function ‘status read_status::reg_fifos(int)’:
+../src/sdn_cntlr_classes.cc:130: error: ‘_req_status’ was not declared in this scope
+../src/sdn_cntlr_classes.cc:133: warning: no return statement in function returning non-void
+make: *** [src/sdn_cntlr_classes.o] Error 1
+19:28:11 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In member function ‘status read_status::reg_fifos(int)’:
+Finished building: ../src/sdn_cntlr_classes.cc
+../src/sdn_cntlr_classes.cc:133: warning: no return statement in function returning non-void
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:30:24 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In member function ‘status read_status::reg_fifos(int)’:
+../src/sdn_cntlr_classes.cc:133: warning: no return statement in function returning non-void
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:34:23 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+../src/sdn_cntlr_classes.cc: In member function ‘status read_status::reg_fifos(int)’:
+../src/sdn_cntlr_classes.cc:133: error: invalid use of ‘class cpu_bus_read’
+../src/sdn_cntlr_classes.cc:136: error: expected primary-expression before ‘;’ token
+make: *** [src/sdn_cntlr_classes.o] Error 1
+19:37:13 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:44:45 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:9: error: ‘cpu_bus_write’ has not been declared
+make: *** [src/main.o] Error 1
+19:45:18 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:10: error: conflicting declaration ‘bool cpu_bus_write::toggle_val’
+../src/sdn_cntlr_classes.cc:18: error: ‘cpu_bus_write::toggle_val’ has a previous declaration as ‘volatile bool cpu_bus_write::toggle_val’
+../src/main.cc:10: error: declaration of ‘volatile bool cpu_bus_write::toggle_val’ outside of class is not definition
+make: *** [src/main.o] Error 1
+19:45:19 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+19:45:20 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:10: error: conflicting declaration ‘bool cpu_bus_write::toggle_val’
+../src/sdn_cntlr_classes.cc:18: error: ‘cpu_bus_write::toggle_val’ has a previous declaration as ‘volatile bool cpu_bus_write::toggle_val’
+../src/main.cc:10: error: declaration of ‘volatile bool cpu_bus_write::toggle_val’ outside of class is not definition
+make: *** [src/main.o] Error 1
+19:45:36 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307604	  41112	   4876	 353592	  56538	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:45:38 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+19:45:39 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+19:48:45 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:20: error: ‘chipscope_en’ was not declared in this scope
+../src/main.cc:14: warning: unused variable ‘chipscope_enable’
+../src/main.cc:17: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+19:48:47 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+19:48:48 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:20: error: ‘chipscope_en’ was not declared in this scope
+../src/main.cc:14: warning: unused variable ‘chipscope_enable’
+../src/main.cc:17: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+19:49:03 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+19:49:04 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:17: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 307964	  41112	   4876	 353952	  566a0	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:50:41 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:32: error: a function-definition is not allowed here before ‘{’ token
+../src/main.cc:17: warning: unused variable ‘status’
+../src/main.cc:26: warning: unused variable ‘header’
+../src/main.cc:27: warning: unused variable ‘action’
+make: *** [src/main.o] Error 1
+19:51:21 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘void delay(uint32_t)’:
+../src/main.cc:19: error: redeclaration of ‘bool cpu_bus_write::toggle_val’
+../src/sdn_cntlr_classes.cc:18: error: ‘bool cpu_bus_write::toggle_val’ previously declared here
+../src/main.cc:19: error: declaration of ‘bool cpu_bus_write::toggle_val’ outside of class is not definition
+../src/main.cc:22: error: a function-definition is not allowed here before ‘{’ token
+../src/main.cc:39: error: expected `}' at end of input
+make: *** [src/main.o] Error 1
+19:51:44 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:29: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 308060	  41112	   4876	 354048	  56700	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:52:06 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:33: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 308060	  41112	   4940	 354112	  56740	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:53:42 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:45: error: ‘reset’ was not declared in this scope
+../src/main.cc:33: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+19:54:02 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:33: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 308092	  41112	   4940	 354144	  56760	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:55:46 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:42: error: expected `;' before ‘while’
+../src/main.cc:33: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+19:55:53 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:33: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 308432	  41112	   4940	 354484	  568b4	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:56:04 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:33: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 308432	  41112	   4940	 354484	  568b4	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+19:57:57 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:33: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 308432	  41112	   4940	 354484	  568b4	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+20:01:14 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:33: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311548	  41176	   4940	 357664	  57520	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+20:02:43 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+20:02:44 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+20:21:44 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK/gnu/microblaze/lin64/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/bin/ld: packet_tx.elf section `.data' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK/gnu/microblaze/lin64/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/bin/ld: region `ilmb_cntlr_dlmb_cntlr' overflowed by 33264 bytes
+collect2: ld returned 1 exit status
+make: *** [packet_tx.elf] Error 1
+20:36:17 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311548	  41176	   4940	 357664	  57520	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+20:36:25 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311548	  41176	   4940	 357664	  57520	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+20:36:32 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK/gnu/microblaze/lin64/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/bin/ld: packet_tx.elf section `.heap' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+/raid/opt.x86_64/xilinx/14.5/ISE_DS/EDK/gnu/microblaze/lin64/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/bin/ld: region `ilmb_cntlr_dlmb_cntlr' overflowed by 16704 bytes
+collect2: ld returned 1 exit status
+make: *** [packet_tx.elf] Error 1
+20:36:52 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15162	   1420	  33018	  49600	   c1c0	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+20:36:55 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+20:36:56 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+21:06:59 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:33: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311584	  41176	   4940	 357700	  57544	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+23:39:11 **** Auto Build of project mb_bsp ****
+make -k all 
+Finished building libraries
+23:39:12 **** Auto Build of project ppc_bsp ****
+make -k all 
+Finished building libraries
+23:41:47 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+23:41:48 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:09:41 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12094	   1416	  33008	  46518	   b5b6	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+00:09:45 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:09:46 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:19:57 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:33: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311644	  41176	   4940	 357760	  57580	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+00:20:00 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:20:01 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:21:34 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:21:34 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:22:00 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:22:00 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:22:40 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:8:24: error: xparameter.h: No such file or directory
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:34: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+00:22:47 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:34: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311644	  41176	   4940	 357760	  57580	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+00:22:49 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:22:49 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:25:13 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:25:14 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:26:02 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:34: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311644	  41176	   4940	 357760	  57580	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+00:26:15 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:26:16 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:26:32 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:26:33 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:26:43 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:6:10: error: #include expects "FILENAME" or <FILENAME>
+../src/main.cc:9: error: missing terminating " character
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+00:27:01 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311644	  41176	   4940	 357760	  57580	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+00:27:05 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:27:06 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+00:27:41 **** Auto Build of configuration Debug for project packet_tx ****
+make all 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12094	   1416	  33008	  46518	   b5b6	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+00:28:38 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:28:39 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311644	  41176	   4940	 357760	  57580	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+00:29:14 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+00:29:14 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+08:51:17 **** Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+08:51:25 **** Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+08:51:25 **** Build of project ppc_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe ppc405_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe ppc405_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+powerpc-eabi-ar: creating ../../../lib/libxil.a
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling uartlite
+Compiling bram
+Compiling intc
+Compiling cpu_ppc405
+Running execs_generate.
+Finished building libraries
+08:51:35 **** Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311644	  41176	   4940	 357760	  57580	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+08:51:44 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+08:51:44 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+08:51:50 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+08:51:50 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+10:17:39 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+10:17:40 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+10:17:59 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+10:18:00 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+11:58:56 **** Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+11:59:03 **** Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+11:59:04 **** Build of project ppc_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe ppc405_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe ppc405_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+powerpc-eabi-ar: creating ../../../lib/libxil.a
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling uartlite
+Compiling bram
+Compiling intc
+Compiling cpu_ppc405
+Running execs_generate.
+Finished building libraries
+11:59:12 **** Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311644	  41176	   4940	 357760	  57580	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+11:59:35 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+11:59:36 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+12:23:46 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+ERROR: ld.so: object '/opt/xilinx/usbjtag/libusb-driver.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/opt/xilinx/usbjtag/libusb-driver.so' from LD_PRELOAD cannot be preloaded: ignored.
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+ERROR: ld.so: object '/opt/xilinx/usbjtag/libusb-driver.so' from LD_PRELOAD cannot be preloaded: ignored.
+Finished building: ../src/main.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+ERROR: ld.so: object '/opt/xilinx/usbjtag/libusb-driver.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/opt/xilinx/usbjtag/libusb-driver.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/opt/xilinx/usbjtag/libusb-driver.so' from LD_PRELOAD cannot be preloaded: ignored.
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+ERROR: ld.so: object '/opt/xilinx/usbjtag/libusb-driver.so' from LD_PRELOAD cannot be preloaded: ignored.
+   text	   data	    bss	    dec	    hex	filename
+ 311644	  41176	   4940	 357760	  57580	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+12:24:23 **** Incremental Build of configuration Debug for project packet_tx ****
+make all 
+make: Nothing to be done for `all'.
+12:24:24 **** Incremental Build of configuration Debug for project sdn_cntlr ****
+make all 
+make: Nothing to be done for `all'.
+12:20:05 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/sdn_cntlr_classes.cc:75: error: ‘read_status’ does not name a type
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+12:20:25 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/sdn_cntlr_classes.cc:108: error: declaration of ‘read_status install_flow::read_status’
+../src/sdn_cntlr_classes.cc:75: error: changes meaning of ‘read_status’ from ‘class read_status’
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+12:21:04 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 311744	  41176	   4940	 357860	  575e4	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+12:27:34 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/sdn_cntlr_classes.cc:109: error: declaration of ‘status install_flow::status’
+../src/sdn_cntlr_classes.cc:70: error: changes meaning of ‘status’ from ‘struct status’
+../src/sdn_cntlr_classes.cc: In member function ‘void install_flow::write_to_reg(uint32_t*, uint32_t*, int, int)’:
+../src/sdn_cntlr_classes.cc:146: error: no match for ‘operator=’ in ‘((install_flow*)this)->install_flow::status = ((install_flow*)this)->install_flow::stat_handler. read_status::check_status(((uint32_t)switch_id))’
+../src/sdn_cntlr_classes.cc:70: note: candidates are: status& status::operator=(const status&)
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+12:28:24 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/sdn_cntlr_classes.cc: In member function ‘void install_flow::write_to_reg(uint32_t*, uint32_t*, int, int)’:
+../src/sdn_cntlr_classes.cc:146: error: no match for ‘operator=’ in ‘((install_flow*)this)->install_flow::stat = ((install_flow*)this)->install_flow::stat_handler. read_status::check_status(((uint32_t)switch_id))’
+../src/sdn_cntlr_classes.cc:70: note: candidates are: status& status::operator=(const status&)
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+make: *** [src/main.o] Error 1
+12:28:49 **** Auto Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 312368	  41176	   4940	 358484	  57854	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
+12:29:15 **** Clean-only build of configuration Debug for project packet_tx ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  packet_tx.elf.size  packet_tx.elf.elfcheck  packet_tx.elf
+ 
+12:29:15 **** Clean-only build of configuration Debug for project sdn_cntlr ****
+make clean 
+rm -rf  ./src/main.o ./src/sdn_cntlr_classes.o  ./src/main.d ./src/sdn_cntlr_classes.d  sdn_cntlr.elf.size  sdn_cntlr.elf.elfcheck  sdn_cntlr.elf
+ 
+12:29:15 **** Clean-only build of project mb_bsp ****
+12:29:15 **** Clean-only build of project ppc_bsp ****
+make -k clean 
+make -k clean 
+rm -rf microblaze_0
+rm -rf ppc405_0
+12:29:15 **** Build of project mb_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling intc
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+12:29:23 **** Build of configuration Debug for project packet_tx ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../mb_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: packet_tx.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.a -mno-xl-soft-mul -o "packet_tx.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: packet_tx.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size packet_tx.elf  |tee "packet_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12094	   1416	  33008	  46518	   b5b6	packet_tx.elf
+Finished building: packet_tx.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck packet_tx.elf -hw ../../edk_hw_platform/system.xml -pe microblaze_0  |tee "packet_tx.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe microblaze_0
+packet_tx.elf 
+
+ELF file	: packet_tx.elf
+elfcheck passed.
+Finished building: packet_tx.elf.elfcheck
+ 
+12:29:24 **** Build of project ppc_bsp ****
+make -k all 
+libgen -hw ../edk_hw_platform/system.xml\
+	       \
+	       -pe ppc405_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../edk_hw_platform/system.xml -pe ppc405_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+powerpc-eabi-ar: creating ../../../lib/libxil.a
+Compiling lldma
+Compiling standalone
+Compiling mpmc
+Compiling uartlite
+Compiling bram
+Compiling intc
+Compiling cpu_ppc405
+Running execs_generate.
+Finished building libraries
+12:29:32 **** Build of configuration Debug for project sdn_cntlr ****
+make all 
+Building file: ../src/main.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:35: warning: unused variable ‘status’
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sdn_cntlr_classes.cc
+Invoking: PowerPC g++ compiler
+powerpc-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../ppc_bsp/ppc405_0/include -MMD -MP -MF"src/sdn_cntlr_classes.d" -MT"src/sdn_cntlr_classes.d" -o "src/sdn_cntlr_classes.o" "../src/sdn_cntlr_classes.cc"
+Finished building: ../src/sdn_cntlr_classes.cc
+ 
+Building target: sdn_cntlr.elf
+Invoking: PowerPC g++ linker
+powerpc-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ppc_bsp/ppc405_0/lib -o "sdn_cntlr.elf"  ./src/main.o ./src/sdn_cntlr_classes.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: sdn_cntlr.elf
+ 
+Invoking: PowerPC Print Size
+powerpc-eabi-size sdn_cntlr.elf  |tee "sdn_cntlr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 312368	  41176	   4940	 358484	  57854	sdn_cntlr.elf
+Finished building: sdn_cntlr.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck sdn_cntlr.elf -hw ../../edk_hw_platform/system.xml -pe ppc405_0  |tee "sdn_cntlr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../edk_hw_platform/system.xml -pe ppc405_0
+sdn_cntlr.elf 
+
+ELF file	: sdn_cntlr.elf
+elfcheck passed.
+Finished building: sdn_cntlr.elf.elfcheck
+ 
